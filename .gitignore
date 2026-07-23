@@ -2,6 +2,14 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# artefatos de build do TypeScript
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# config local do Claude Code
+.claude/settings.local.json
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
