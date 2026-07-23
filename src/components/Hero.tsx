@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import foto from "../assets/foto.webp";
 
 const scrollTo = (id: string) => (e: React.MouseEvent) => {
   e.preventDefault();
@@ -56,11 +57,14 @@ export default function Hero() {
           <ArrowRight className="hx-arrow" />
         </motion.a>
 
-        <motion.h1 className="hx-title" {...up(0.15)}>
-          Desenho produtos que
-          <br />
-          <em>escalam e lideram.</em>
-        </motion.h1>
+        <motion.div className="hx-title-box" {...up(0.15)}>
+          <img className="hx-avatar" src={foto} alt="Retrato de Jéssica Nascimento" />
+          <h1 className="hx-title">
+            Olá, eu sou a Jess!
+            <br />
+            <em>Designer de produto Sênior</em>
+          </h1>
+        </motion.div>
 
         <motion.p className="hx-sub" {...up(0.25)}>
           Conectando negócio e experiência

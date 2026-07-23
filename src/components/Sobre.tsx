@@ -70,11 +70,6 @@ export default function Sobre() {
               <div>
                 <strong>Hoje</strong>Product Owner na EzPag
               </div>
-              <div className="meta-quote">
-                “Criamos um plano de desenvolvimento ousado. O que aconteceu desde então foi uma das
-                histórias mais inspiradoras que já acompanhei de perto. Seu crescimento foi visível,
-                consistente, orgânico.”<strong>— Rick Rodrigues, CTO</strong>
-              </div>
             </div>
           </Reveal>
         </div>
