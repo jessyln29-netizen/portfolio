@@ -1,10 +1,27 @@
 import envia from "../assets/envia.webp";
 import orizon from "../assets/orizon.webp";
 import coinrun from "../assets/coinrun.webp";
+import ozDevices from "../assets/oz-devices.webp";
+import ozCanvas from "../assets/oz-canvas.webp";
+import ozSteps from "../assets/oz-steps.webp";
+import ozPricing from "../assets/oz-pricing.webp";
+import ozBrand from "../assets/oz-brand.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
   | { label: string; items: string[] };
+
+/** Seção rica de estudo de caso (usada pelo Orizon). */
+export type CaseSection = {
+  kicker?: string;
+  title: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  image?: string;
+  imageAlt?: string;
+  caption?: string;
+  layout?: "text" | "imageRight" | "imageLeft" | "imageFull";
+};
 
 export type Project = {
   id: string;
@@ -16,42 +33,103 @@ export type Project = {
   cardDesc: string;
   summary: string;
   meta: { label: string; value: string }[];
-  screenCaption: string;
-  blocks: ProjectBlock[];
+  // caso rico (Orizon)
+  heroImage?: string;
+  heroImageAlt?: string;
+  sections?: CaseSection[];
+  designSystem?: boolean;
+  // caso simples (Envia+, Coin Run)
+  screenCaption?: string;
+  blocks?: ProjectBlock[];
 };
 
 export const projects: Project[] = [
   {
     id: "orizon",
     name: "Orizon Mudanças",
-    tag: "UI/UX Design",
+    tag: "UI/UX · Produto",
     cover: orizon,
     coverAlt:
       "Landing da Orizon Mudanças: cada mudança é um novo começo, com grade de fotos de casas e CTAs",
-    kicker: "Landing page · Mudanças residenciais",
+    kicker: "Produto digital · SaaS · 2026",
     cardDesc:
-      "Landing de conversão: proposta de valor emocional, prova social e assinatura com teste grátis.",
+      "SaaS de planejamento de mudanças — do canvas de carga ao pagamento, com design system próprio.",
     summary:
-      "“Cada mudança é um novo começo.” — uma landing que transforma um serviço estressante em promessa de recomeço.",
+      "Um SaaS que transforma contratar mudança — algo caro, opaco e estressante — num fluxo visual: monte a carga arrastando móveis num canvas, veja o volume em tempo real e receba cotações comparáveis de transportadoras.",
     meta: [
-      { label: "Papel", value: "Design de interface & UX Writing" },
-      { label: "Formato", value: "Landing page de conversão" },
-      { label: "Ferramentas", value: "Figma" },
+      { label: "Meu papel", value: "Product Design end-to-end (UX/UI + Design System)" },
+      { label: "Tipo", value: "Web app · SaaS B2C" },
+      { label: "Stack", value: "Next.js · Tailwind · shadcn/ui · Prisma · Stripe" },
+      { label: "Ano", value: "2026" },
     ],
-    screenCaption: "Hero — proposta de valor + prova visual",
-    blocks: [
+    heroImage: ozDevices,
+    heroImageAlt: "Orizon Mudanças em laptop, tablet e celular — landing e dashboard",
+    designSystem: true,
+    sections: [
       {
-        label: "O projeto",
+        kicker: "Introdução",
+        title: "Do caos ao fluxo",
         paragraphs: [
-          "Landing page para plataforma de mudanças residenciais. A headline aposta na carga emocional da mudança (“cada mudança é um novo começo”) e o corpo da página responde às ansiedades práticas: móveis intactos, cotações transparentes, acompanhamento em tempo real e suporte humano em português.",
+          "Contratar uma mudança é caro, opaco e estressante: você não sabe qual caminhão precisa, quanto vai custar, nem em quem confiar. O Orizon Mudanças nasceu pra virar esse jogo.",
+          "A ideia é transformar esse caos num fluxo visual e previsível — a pessoa monta a própria mudança arrastando móveis de um catálogo para um caminhão virtual, vê o espaço ocupado na hora e recebe cotações comparáveis de transportadoras avaliadas. Do inventário ao pagamento, num só lugar.",
         ],
       },
       {
-        label: "Decisões de design",
-        items: [
-          "Grade de fotos reais de casas e interiores como prova visual — mudança é sobre o lugar aonde se chega, não sobre caminhões.",
-          "Checklist de benefícios com verificação verde, reduzindo a incerteza antes do CTA.",
-          "Dupla CTA: “Assine agora” (compromisso) e “Testar grátis por 14 dias” (baixa fricção), com nota “sem cartão de crédito” pra remover a última objeção.",
+        kicker: "O coração do produto",
+        title: "Um canvas que qualquer pessoa entende",
+        image: ozCanvas,
+        imageAlt: "Canvas interativo do Orizon com catálogo de itens e ocupação do caminhão",
+        caption: "Canvas interativo — arrasta, solta e vê o volume ocupado em tempo real",
+        layout: "imageRight",
+        paragraphs: [
+          "O catálogo tem 40+ itens com dimensões reais. Ao arrastar um item pro canvas, o volume é recalculado na hora e o app avisa quando a carga ultrapassa a capacidade do caminhão escolhido.",
+          "Foi a decisão de produto mais importante: em vez de um formulário chato, a pessoa quase brinca de montar a mudança — e sai com uma estimativa confiável antes de falar com qualquer transportadora.",
+        ],
+      },
+      {
+        kicker: "Fluxo completo",
+        title: "Do inventário à entrega",
+        image: ozSteps,
+        imageAlt: "Seção passo a passo do Orizon: montar inventário, escolher caminhão, receber cotações, confirmar",
+        caption: "Quatro passos, zero surpresa no dia da mudança",
+        layout: "imageLeft",
+        paragraphs: [
+          "Quatro passos claros: montar o inventário no canvas, escolher o tamanho do caminhão, receber cotações automáticas com data, seguro e preço, e confirmar a melhor oferta.",
+          "Cada etapa foi desenhada pra reduzir incerteza — o usuário sempre sabe onde está e o que falta pra fechar.",
+        ],
+      },
+      {
+        kicker: "Modelo de negócio",
+        title: "Grátis, Trial e PRO",
+        image: ozPricing,
+        imageAlt: "Página de preços do Orizon com planos Grátis e PRO",
+        caption: "Paywall que empurra valor sem irritar",
+        layout: "imageRight",
+        paragraphs: [
+          "O plano Grátis deixa explorar (1 mudança, até 15 itens, 3 cotações). O PRO — R$ 29,90/mês — libera mudanças e itens ilimitados, filtros avançados e comparação lado a lado.",
+          "Todo novo usuário começa num Trial de 14 dias com acesso PRO. O upgrade acontece via Stripe, e desenhei os paywalls (bloqueio de plano, banner de trial e card de upgrade) pra comunicar o limite dentro do fluxo, sem transformar cada clique numa parede de pagamento.",
+        ],
+      },
+      {
+        kicker: "Desafios",
+        title: "O que foi difícil (e valeu a pena)",
+        bullets: [
+          "Traduzir volume 3D (m³) numa interface 2D que qualquer pessoa entende — sem pedir que ninguém pense em matemática.",
+          "Comunicar limites de plano (Grátis vs PRO) dentro do fluxo, sem transformar cada ação numa parede de pagamento.",
+          "Comparar cotações de forma justa: mesma estrutura de data, seguro e preço, lado a lado.",
+          "Manter consistência absoluta entre landing, dashboard e checkout — resolvido com um Design System de tokens, fonte única de verdade.",
+        ],
+      },
+      {
+        kicker: "Sistema visual",
+        title: "Uma marca, um verde",
+        image: ozBrand,
+        imageAlt: "Identidade do Orizon: logo, preços e cards sobre fundo verde e preto",
+        caption: "Verde só onde há ação ou sucesso — pra nunca perder força",
+        layout: "imageFull",
+        paragraphs: [
+          "Verde vibrante como único acento sobre preto e neutros: energia de logística com a seriedade de uma fintech. Poppins do display ao corpo. A regra de ouro do sistema é simples — verde aparece só onde há ação ou sucesso.",
+          "Abaixo, o design system que sustenta tudo isso — recriado aqui em código, a partir da mesma fonte de tokens que roda no produto.",
         ],
       },
     ],
