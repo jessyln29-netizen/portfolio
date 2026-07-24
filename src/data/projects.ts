@@ -12,6 +12,8 @@ import ozFlow3 from "../assets/oz-flow3.webp";
 import ozFlow4 from "../assets/oz-flow4.webp";
 import ozFlow5 from "../assets/oz-flow5.webp";
 import ozFlow6 from "../assets/oz-flow6.webp";
+import ozFlow7 from "../assets/oz-flow7.webp";
+import ozFlow8 from "../assets/oz-flow8.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -81,6 +83,8 @@ export const projects: Project[] = [
       { id: 4, title: "Resumo da carga", description: "Volume, peso e estimativa conforme você monta", imageSrc: ozFlow4 },
       { id: 5, title: "Cotações lado a lado", description: "Compare preço, nota, seguro e data por transportadora", imageSrc: ozFlow5 },
       { id: 6, title: "Resumo e pagamento", description: "Checkout com Cartão, Pix ou Boleto", imageSrc: ozFlow6 },
+      { id: 7, title: "Do começo ao fim", description: "Landing: os 4 passos da mudança sem estresse", imageSrc: ozFlow7 },
+      { id: 8, title: "Um novo começo", description: "Landing: prova visual e confiança pra quem vai mudar", imageSrc: ozFlow8 },
     ],
     sections: [
       {
