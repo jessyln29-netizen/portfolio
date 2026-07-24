@@ -20,7 +20,7 @@ export default function Contato() {
             WhatsApp · (31) 9.8421-5541
           </a>
           <a
-            href="https://www.linkedin.com/in/jessica-nascimento-954b43120/"
+            href="https://www.linkedin.com/in/j%C3%A9ssica-nascimento-954b43120/"
             target="_blank"
             rel="noopener noreferrer"
           >

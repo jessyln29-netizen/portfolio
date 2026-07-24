@@ -14,13 +14,6 @@ export default function Projetos() {
             <h2 className="section-title big">Projetos</h2>
             <span className="section-num">02 — Trabalho selecionado</span>
           </div>
-          <p className="projects-intro">
-            Três produtos reais, em estágios diferentes.
-            <br />
-            Do backlog ao pixel final.
-            <br />
-            Clique em cada um pra ver telas e processo.
-          </p>
         </Reveal>
 
         <div className="projects-grid">

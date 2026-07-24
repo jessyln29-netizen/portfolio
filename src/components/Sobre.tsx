@@ -1,5 +1,4 @@
 import Reveal from "./Reveal";
-import foto from "../assets/foto.webp";
 
 const tags = [
   "Discovery",
@@ -56,7 +55,6 @@ export default function Sobre() {
           </Reveal>
 
           <Reveal className="sobre-aside" delay={0.1}>
-            <img className="sobre-photo" src={foto} alt="Retrato de Jéssica Nascimento" />
             <div className="hero-meta">
               <div>
                 <strong>Contagem, MG</strong>atuando remoto para times no Brasil e nos EUA

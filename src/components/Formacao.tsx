@@ -4,7 +4,7 @@ type Item = { date: string; role: string; co?: string; desc: string };
 
 const items: Item[] = [
   {
-    date: "fev 2025 — jul 2026",
+    date: "fev 2025 — dez 2026",
     role: "Tecnólogo, Gestão de Produtos",
     co: "· Anhanguera Educacional",
     desc: "Formação em gestão de produtos digitais — visão de negócio por trás das decisões de design.",
