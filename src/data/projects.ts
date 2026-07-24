@@ -6,6 +6,12 @@ import ozCanvas from "../assets/oz-canvas.webp";
 import ozSteps from "../assets/oz-steps.webp";
 import ozPricing from "../assets/oz-pricing.webp";
 import ozBrand from "../assets/oz-brand.webp";
+import ozFlow1 from "../assets/oz-flow1.webp";
+import ozFlow2 from "../assets/oz-flow2.webp";
+import ozFlow3 from "../assets/oz-flow3.webp";
+import ozFlow4 from "../assets/oz-flow4.webp";
+import ozFlow5 from "../assets/oz-flow5.webp";
+import ozFlow6 from "../assets/oz-flow6.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -37,6 +43,8 @@ export type Project = {
   heroImage?: string;
   heroImageAlt?: string;
   sections?: CaseSection[];
+  gallery?: { id: number; title: string; description: string; imageSrc: string }[];
+  galleryTitle?: string;
   designSystem?: boolean;
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
@@ -65,6 +73,15 @@ export const projects: Project[] = [
     heroImage: ozDevices,
     heroImageAlt: "Orizon Mudanças em laptop, tablet e celular — landing e dashboard",
     designSystem: true,
+    galleryTitle: "O fluxo, tela a tela",
+    gallery: [
+      { id: 1, title: "Nova mudança", description: "Origem, destino e tamanho da casa em segundos", imageSrc: ozFlow1 },
+      { id: 2, title: "Escolha o caminhão", description: "4 tamanhos + catálogo de itens por cômodo", imageSrc: ozFlow2 },
+      { id: 3, title: "Capacidade em tempo real", description: "Alerta quando a carga passa do limite do veículo", imageSrc: ozFlow3 },
+      { id: 4, title: "Resumo da carga", description: "Volume, peso e estimativa conforme você monta", imageSrc: ozFlow4 },
+      { id: 5, title: "Cotações lado a lado", description: "Compare preço, nota, seguro e data por transportadora", imageSrc: ozFlow5 },
+      { id: 6, title: "Resumo e pagamento", description: "Checkout com Cartão, Pix ou Boleto", imageSrc: ozFlow6 },
+    ],
     sections: [
       {
         kicker: "Introdução",

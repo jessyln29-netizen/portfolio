@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { getProject, projects, type CaseSection } from "../data/projects";
 import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
+import CardStack from "../components/CardStack";
 
 const ArrowLeft = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -107,6 +108,12 @@ export default function ProjectDetail() {
           {project.sections!.map((s, i) => (
             <CaseSectionBlock s={s} key={i} />
           ))}
+          {project.gallery && (
+            <Reveal className="cs-gallery">
+              {project.galleryTitle && <h2 className="cs-gallery-title">{project.galleryTitle}</h2>}
+              <CardStack items={project.gallery} />
+            </Reveal>
+          )}
           {project.designSystem && <DesignSystemShowcase />}
         </>
       ) : (
