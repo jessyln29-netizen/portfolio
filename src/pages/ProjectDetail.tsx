@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { getProject, projects, type CaseSection } from "../data/projects";
 import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
+import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
 import CardStack from "../components/CardStack";
 
 const ArrowLeft = () => (
@@ -114,7 +115,8 @@ export default function ProjectDetail() {
               <CardStack items={project.gallery} />
             </Reveal>
           )}
-          {project.designSystem && <DesignSystemShowcase />}
+          {project.designSystem === "orizon" && <DesignSystemShowcase />}
+          {project.designSystem === "raceon" && <RaceOnStyleGuide />}
         </>
       ) : (
         <>

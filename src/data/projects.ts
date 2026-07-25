@@ -1,6 +1,5 @@
 import envia from "../assets/envia.webp";
 import orizon from "../assets/orizon.webp";
-import coinrun from "../assets/coinrun.webp";
 import ozDevices from "../assets/oz-devices.webp";
 import ozCanvas from "../assets/oz-canvas.webp";
 import ozSteps from "../assets/oz-steps.webp";
@@ -14,6 +13,10 @@ import ozFlow5 from "../assets/oz-flow5.webp";
 import ozFlow6 from "../assets/oz-flow6.webp";
 import ozFlow7 from "../assets/oz-flow7.webp";
 import ozFlow8 from "../assets/oz-flow8.webp";
+import roHero from "../assets/ro-hero.webp";
+import roCenario from "../assets/ro-cenario.webp";
+import roDesafios from "../assets/ro-desafios.webp";
+import roCiclo from "../assets/ro-ciclo.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -47,7 +50,7 @@ export type Project = {
   sections?: CaseSection[];
   gallery?: { id: number; title: string; description: string; imageSrc: string }[];
   galleryTitle?: string;
-  designSystem?: boolean;
+  designSystem?: "orizon" | "raceon";
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
   blocks?: ProjectBlock[];
@@ -74,7 +77,7 @@ export const projects: Project[] = [
     ],
     heroImage: ozDevices,
     heroImageAlt: "Orizon Mudanças em laptop, tablet e celular — landing e dashboard",
-    designSystem: true,
+    designSystem: "orizon",
     galleryTitle: "O fluxo, tela a tela",
     gallery: [
       { id: 1, title: "Nova mudança", description: "Origem, destino e tamanho da casa em segundos", imageSrc: ozFlow1 },
@@ -215,36 +218,73 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "coinrun",
-    name: "Coin Run",
-    tag: "UI/UX Design",
-    cover: coinrun,
-    coverAlt: "Tela de onboarding do app Coin Run: comece sua jornada de corrida",
-    kicker: "App mobile · Protótipo MVP — 12 telas",
+    id: "raceon",
+    name: "Race On",
+    tag: "UI/UX · Produto",
+    cover: roHero,
+    coverAlt: "Landing e app do Race On: corra, explore, conquiste",
+    kicker: "App mobile · Produto gamificado · 2026",
     cardDesc:
-      "App de corrida gamificado — onboarding que transforma meta em jornada, do primeiro passo à recompensa.",
+      "App que transforma corrida em jornada gamificada — geolocalização, moedas, missões e recompensas.",
     summary:
-      "App de corrida gamificado — 12 telas de MVP, do onboarding à recompensa.",
+      "Um app que transforma caminhadas e corridas em jogo: geolocalização e gamificação viram moedas, missões, níveis e recompensas de verdade. A cidade é a sua arena.",
     meta: [
-      { label: "Papel", value: "Product Design end-to-end" },
-      { label: "Formato", value: "Protótipo mobile · PT-BR" },
-      { label: "Escopo", value: "MVP — 12 telas" },
+      { label: "Meu papel", value: "Product Design end-to-end (UX/UI + Design System)" },
+      { label: "Tipo", value: "App mobile · fitness + gamificação" },
+      { label: "Idioma", value: "PT-BR (multilíngue no roadmap)" },
+      { label: "Estágio", value: "MVP · piloto em Brickell & Downtown Miami" },
     ],
-    screenCaption: "Onboarding — comece sua jornada",
-    blocks: [
+    heroImage: roHero,
+    heroImageAlt: "Race On em laptop e celular — landing e app",
+    designSystem: "raceon",
+    sections: [
       {
-        label: "O projeto",
+        kicker: "Introdução",
+        title: "Corra. Explore. Conquiste.",
         paragraphs: [
-          "Protótipo de MVP para um app que transforma corrida em jogo: o usuário define metas, corre e acumula recompensas. O onboarding abre com fotografia em contexto urbano e uma promessa direta — “comece sua jornada de corrida” — pra converter intenção em primeiro passo.",
+          "O Race On nasceu com o propósito de transformar caminhadas e corridas em experiências mais envolventes, recompensadoras e divertidas. Por meio da geolocalização e da gamificação, o aplicativo incentiva as pessoas a explorarem a cidade, coletarem moedas, concluírem missões, evoluírem de nível e desbloquearem benefícios.",
         ],
       },
       {
-        label: "Decisões de design",
-        items: [
-          "Tom escuro com acentos vibrantes pra leitura em movimento e ao ar livre.",
-          "Fluxo de 12 telas enxuto: onboarding, meta, corrida ativa e recompensa — nada que atrase o primeiro treino.",
-          "CTA “Começar” sempre visível: a ação principal nunca sai do alcance do polegar.",
+        kicker: "Cenário",
+        title: "Métrica não engaja. Jornada, sim.",
+        image: roCenario,
+        imageAlt: "Telas do Race On: home com meta de passos, missões, mapa e loja",
+        caption: "Do passo à meta — cada tela reforça o próximo movimento",
+        layout: "imageRight",
+        paragraphs: [
+          "Muitas pessoas desejam criar uma rotina de exercícios, mas encontram dificuldades para manter a motivação e a constância. Os aplicativos tradicionais costumam concentrar a experiência apenas em métricas como distância, tempo e ritmo, o que pode não ser suficiente para engajar usuários iniciantes ou aqueles que buscam uma atividade mais dinâmica.",
         ],
+      },
+      {
+        kicker: "Como funciona",
+        title: "Um ciclo simples que dá vontade de voltar",
+        image: roCiclo,
+        imageAlt: "Ciclo do Race On: escolha, mova-se, colete, evolua, volte — e recompensas por raridade",
+        caption: "Escolha → Mova-se → Colete → Evolua → Volte",
+        layout: "imageLeft",
+        paragraphs: [
+          "O ciclo combina três coisas que a pessoa já faz: se mover, explorar a cidade e ser recompensada. Caminhar e correr deixam de ser tarefa e viram progresso visível — distância, ritmo, moedas e níveis.",
+          "E as moedas viram prêmios de verdade: na Loja, elas trocam por cupons de parceiros, tênis, skins e cartas colecionáveis em três raridades — Ouro, Prata e Bronze.",
+        ],
+      },
+      {
+        kicker: "Desafios",
+        title: "O que precisou ser resolvido",
+        bullets: [
+          "Criar uma experiência atrativa tanto para iniciantes quanto para usuários experientes.",
+          "Transformar a atividade física em uma jornada divertida sem perder a simplicidade.",
+          "Usar a geolocalização de forma segura, evitando áreas inadequadas e distrações durante o percurso.",
+          "Definir missões e recompensas capazes de incentivar a recorrência.",
+          "Equilibrar competição, progressão e benefícios sem tornar o aplicativo complexo.",
+          "Desenvolver mecanismos para identificar fraudes e atividades incompatíveis com caminhada ou corrida.",
+          "Criar uma experiência multilíngue, tendo o português como idioma principal.",
+          "Estruturar um MVP que valide o interesse dos usuários antes de incluir funcionalidades mais avançadas.",
+        ],
+        image: roDesafios,
+        imageAlt: "Telas do Race On: preparar atividade, corrida ativa com timer e perfil com conquistas",
+        caption: "Segurança, anti-fraude e simplicidade — pensados desde o MVP",
+        layout: "imageFull",
       },
     ],
   },
