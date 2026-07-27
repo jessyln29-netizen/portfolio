@@ -4,6 +4,7 @@ import { getProject, projects, type CaseSection } from "../data/projects";
 import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
 import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
+import EnviaStyleGuide from "../components/EnviaStyleGuide";
 import CardStack from "../components/CardStack";
 
 const ArrowLeft = () => (
@@ -126,8 +127,6 @@ export default function ProjectDetail() {
               )}
             </Reveal>
           )}
-          {project.designSystem === "orizon" && <DesignSystemShowcase />}
-          {project.designSystem === "raceon" && <RaceOnStyleGuide />}
         </>
       ) : (
         <>
@@ -154,6 +153,10 @@ export default function ProjectDetail() {
           ))}
         </>
       )}
+
+      {project.designSystem === "orizon" && <DesignSystemShowcase />}
+      {project.designSystem === "raceon" && <RaceOnStyleGuide />}
+      {project.designSystem === "envia" && <EnviaStyleGuide />}
 
       <div className="pd-nav-next">
         <button className="back-btn" onClick={() => navigate(`/projeto/${next.id}`)}>

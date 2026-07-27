@@ -56,7 +56,7 @@ export type Project = {
   gallery?: { id: number; title: string; description: string; imageSrc: string }[];
   galleryTitle?: string;
   galleryVariant?: "landscape" | "poster";
-  designSystem?: "orizon" | "raceon";
+  designSystem?: "orizon" | "raceon" | "envia";
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
   blocks?: ProjectBlock[];
@@ -191,6 +191,7 @@ export const projects: Project[] = [
         value: "Nubank, Wise, Inter e Nomad, adaptadas pra um público próprio",
       },
     ],
+    designSystem: "envia",
     screenCaption: "Home, hero + simulador de conversão",
     blocks: [
       {
