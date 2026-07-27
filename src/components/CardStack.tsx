@@ -12,6 +12,14 @@ type CardStackProps = {
   items: CardStackItem[];
   initialIndex?: number;
   maxVisible?: number;
+  /** proporção altura/largura do card (0.62 paisagem, 1.25 retrato) */
+  aspect?: number;
+  /** fração da largura do palco que o card ocupa */
+  widthFactor?: number;
+  /** largura máxima do card em px */
+  maxWidth?: number;
+  /** só a imagem, sem overlay/legenda (para posters com texto próprio) */
+  bare?: boolean;
   overlap?: number;
   spreadDeg?: number;
   perspectivePx?: number;
@@ -39,6 +47,10 @@ export default function CardStack({
   items,
   initialIndex = 0,
   maxVisible = 5,
+  aspect = 0.62,
+  widthFactor = 0.62,
+  maxWidth = 560,
+  bare = false,
   overlap = 0.42,
   spreadDeg = 40,
   perspectivePx = 1100,
@@ -63,13 +75,13 @@ export default function CardStack({
   React.useEffect(() => {
     const update = () => {
       const stageW = stageRef.current?.clientWidth ?? 900;
-      const w = Math.min(560, Math.max(240, Math.round(stageW * 0.62)));
-      setMeasured({ w, h: Math.round(w * 0.62) });
+      const w = Math.min(maxWidth, Math.max(220, Math.round(stageW * widthFactor)));
+      setMeasured({ w, h: Math.round(w * aspect) });
     };
     update();
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
-  }, []);
+  }, [aspect, widthFactor, maxWidth]);
 
   const maxOffset = Math.max(0, Math.floor(maxVisible / 2));
   const cardSpacing = Math.max(10, Math.round(measured.w * (1 - overlap)));
@@ -151,13 +163,17 @@ export default function CardStack({
                   onClick={() => (isActive ? null : setActive(i))}
                   {...dragProps}
                 >
-                  <div className="cardstack-inner" style={{ transform: `translateZ(${z}px)` }}>
+                  <div className={`cardstack-inner${bare ? " bare" : ""}`} style={{ transform: `translateZ(${z}px)` }}>
                     <img src={item.imageSrc} alt={item.title} draggable={false} loading="lazy" />
-                    <div className="cardstack-overlay" />
-                    <div className="cardstack-caption">
-                      <strong>{item.title}</strong>
-                      {item.description && <span>{item.description}</span>}
-                    </div>
+                    {!bare && (
+                      <>
+                        <div className="cardstack-overlay" />
+                        <div className="cardstack-caption">
+                          <strong>{item.title}</strong>
+                          {item.description && <span>{item.description}</span>}
+                        </div>
+                      </>
+                    )}
                   </div>
                 </motion.div>
               );

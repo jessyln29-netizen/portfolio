@@ -112,7 +112,18 @@ export default function ProjectDetail() {
           {project.gallery && (
             <Reveal className="cs-gallery">
               {project.galleryTitle && <h2 className="cs-gallery-title">{project.galleryTitle}</h2>}
-              <CardStack items={project.gallery} />
+              {project.galleryVariant === "poster" ? (
+                <CardStack
+                  items={project.gallery}
+                  aspect={1.25}
+                  widthFactor={0.44}
+                  maxWidth={380}
+                  bare
+                  intervalMs={4200}
+                />
+              ) : (
+                <CardStack items={project.gallery} />
+              )}
             </Reveal>
           )}
           {project.designSystem === "orizon" && <DesignSystemShowcase />}

@@ -16,6 +16,12 @@ import roHero from "../assets/ro-hero.webp";
 import roCenario from "../assets/ro-cenario.webp";
 import roDesafios from "../assets/ro-desafios.webp";
 import roCiclo from "../assets/ro-ciclo.webp";
+import roSlide1 from "../assets/ro-slide1.webp";
+import roSlide2 from "../assets/ro-slide2.webp";
+import roSlide3 from "../assets/ro-slide3.webp";
+import roSlide4 from "../assets/ro-slide4.webp";
+import roSlide5 from "../assets/ro-slide5.webp";
+import roSlide6 from "../assets/ro-slide6.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -49,6 +55,7 @@ export type Project = {
   sections?: CaseSection[];
   gallery?: { id: number; title: string; description: string; imageSrc: string }[];
   galleryTitle?: string;
+  galleryVariant?: "landscape" | "poster";
   designSystem?: "orizon" | "raceon";
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
@@ -236,6 +243,16 @@ export const projects: Project[] = [
     heroImage: roHero,
     heroImageAlt: "Race On em laptop e celular — landing e app",
     designSystem: "raceon",
+    galleryTitle: "O app, tela a tela",
+    galleryVariant: "poster",
+    gallery: [
+      { id: 1, title: "O movimento virou jogo", description: "Onboarding — comece sua jornada", imageSrc: roSlide1 },
+      { id: 2, title: "Uma missão para cada dia", description: "Home — meta, progresso e ação", imageSrc: roSlide2 },
+      { id: 3, title: "Escolha o seu caminho", description: "Mapa e preparação da atividade", imageSrc: roSlide3 },
+      { id: 4, title: "Missões que geram recompensas", description: "Missões e loja de raridades", imageSrc: roSlide4 },
+      { id: 5, title: "Agora é só correr", description: "Atividade em tempo real", imageSrc: roSlide5 },
+      { id: 6, title: "Cada passo conta uma história", description: "Perfil, conquistas e histórico", imageSrc: roSlide6 },
+    ],
     sections: [
       {
         kicker: "Introdução",
