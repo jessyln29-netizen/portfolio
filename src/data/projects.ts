@@ -1,7 +1,6 @@
 import envia from "../assets/envia.webp";
 import orizon from "../assets/orizon.webp";
 import ozDevices from "../assets/oz-devices.webp";
-import ozCanvas from "../assets/oz-canvas.webp";
 import ozSteps from "../assets/oz-steps.webp";
 import ozPricing from "../assets/oz-pricing.webp";
 import ozBrand from "../assets/oz-brand.webp";
@@ -101,10 +100,10 @@ export const projects: Project[] = [
       {
         kicker: "O coração do produto",
         title: "Um canvas que qualquer pessoa entende",
-        image: ozCanvas,
-        imageAlt: "Canvas interativo do Orizon com catálogo de itens e ocupação do caminhão",
-        caption: "Canvas interativo — arrasta, solta e vê o volume ocupado em tempo real",
-        layout: "imageRight",
+        image: ozFlow2,
+        imageAlt: "Editor de mudança do Orizon: seleção de caminhão e catálogo de itens por cômodo",
+        caption: "O canvas de verdade — escolha o caminhão e arraste itens do catálogo, com o volume ocupado em tempo real",
+        layout: "imageFull",
         paragraphs: [
           "O catálogo tem 40+ itens com dimensões reais. Ao arrastar um item pro canvas, o volume é recalculado na hora e o app avisa quando a carga ultrapassa a capacidade do caminhão escolhido.",
           "Foi a decisão de produto mais importante: em vez de um formulário chato, a pessoa quase brinca de montar a mudança — e sai com uma estimativa confiável antes de falar com qualquer transportadora.",
