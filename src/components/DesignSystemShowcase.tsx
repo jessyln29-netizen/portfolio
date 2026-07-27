@@ -42,10 +42,10 @@ const raios: [string, number][] = [
   ["sm", 6], ["md", 8], ["lg", 10], ["xl", 14], ["2xl", 18], ["full", 999],
 ];
 const breakpoints: [string, string, string][] = [
-  ["sm", "640px", "Telefone landscape — 1 coluna vira 2"],
-  ["md", "768px", "Tablet — nav completa, sidebar visível"],
-  ["lg", "1024px", "Desktop — grids de 3 colunas"],
-  ["xl", "1280px", "Widescreen — contêiner no máximo"],
+  ["sm", "640px", "Telefone landscape, 1 coluna vira 2"],
+  ["md", "768px", "Tablet, nav completa, sidebar visível"],
+  ["lg", "1024px", "Desktop, grids de 3 colunas"],
+  ["xl", "1280px", "Widescreen, contêiner no máximo"],
 ];
 
 function Swatch({
@@ -96,7 +96,7 @@ export default function DesignSystemShowcase() {
       <Reveal className="ds-block">
         <div className="ds-block-head">
           <h3>Tipografia</h3>
-          <span>Poppins — do display de peso 800 ao corpo em 400.</span>
+          <span>Poppins, do display de peso 800 ao corpo em 400.</span>
         </div>
         <div className="ds-type-specimen">
           <span className="ds-type-big">Poppins.</span>
@@ -162,7 +162,7 @@ export default function DesignSystemShowcase() {
       <Reveal className="ds-block">
         <div className="ds-block-head">
           <h3>Componentes</h3>
-          <span>Botões, selos, campos e overlays — verde só na ação principal.</span>
+          <span>Botões, selos, campos e overlays, verde só na ação principal.</span>
         </div>
 
         <p className="ds-group-label">Botões</p>
@@ -220,7 +220,7 @@ export default function DesignSystemShowcase() {
           <span>Escala 4px, raios derivados de um único --radius, e breakpoints mobile-first.</span>
         </div>
 
-        <p className="ds-group-label">Espaçamento — base 4px</p>
+        <p className="ds-group-label">Espaçamento · base 4px</p>
         <div className="ds-space">
           {espacos.map(([n, px]) => (
             <div className="ds-space-row" key={n}>

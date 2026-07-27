@@ -72,9 +72,9 @@ export const projects: Project[] = [
       "Landing da Orizon Mudanças: cada mudança é um novo começo, com grade de fotos de casas e CTAs",
     kicker: "Produto digital · SaaS · 2026",
     cardDesc:
-      "SaaS de planejamento de mudanças — do canvas de carga ao pagamento, com design system próprio.",
+      "SaaS de planejamento de mudanças, do canvas de carga ao pagamento, com design system próprio.",
     summary:
-      "Um SaaS que transforma contratar mudança — algo caro, opaco e estressante — num fluxo visual: monte a carga arrastando móveis num canvas, veja o volume em tempo real e receba cotações comparáveis de transportadoras.",
+      "Um SaaS que transforma contratar mudança, algo caro, opaco e estressante, num fluxo visual: monte a carga arrastando móveis num canvas, veja o volume em tempo real e receba cotações comparáveis de transportadoras.",
     meta: [
       { label: "Meu papel", value: "Product Design end-to-end (UX/UI + Design System)" },
       { label: "Tipo", value: "Web app · SaaS B2C" },
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       { label: "Ano", value: "2026" },
     ],
     heroImage: ozDevices,
-    heroImageAlt: "Orizon Mudanças em laptop, tablet e celular — landing e dashboard",
+    heroImageAlt: "Orizon Mudanças em laptop, tablet e celular, landing e dashboard",
     designSystem: "orizon",
     galleryTitle: "O fluxo, tela a tela",
     gallery: [
@@ -101,7 +101,7 @@ export const projects: Project[] = [
         title: "Do caos ao fluxo",
         paragraphs: [
           "Contratar uma mudança é caro, opaco e estressante: você não sabe qual caminhão precisa, quanto vai custar, nem em quem confiar. O Orizon Mudanças nasceu pra virar esse jogo.",
-          "A ideia é transformar esse caos num fluxo visual e previsível — a pessoa monta a própria mudança arrastando móveis de um catálogo para um caminhão virtual, vê o espaço ocupado na hora e recebe cotações comparáveis de transportadoras avaliadas. Do inventário ao pagamento, num só lugar.",
+          "A ideia é transformar esse caos num fluxo visual e previsível, a pessoa monta a própria mudança arrastando móveis de um catálogo para um caminhão virtual, vê o espaço ocupado na hora e recebe cotações comparáveis de transportadoras avaliadas. Do inventário ao pagamento, num só lugar.",
         ],
       },
       {
@@ -109,11 +109,11 @@ export const projects: Project[] = [
         title: "Um canvas que qualquer pessoa entende",
         image: ozFlow2,
         imageAlt: "Editor de mudança do Orizon: seleção de caminhão e catálogo de itens por cômodo",
-        caption: "O canvas de verdade — escolha o caminhão e arraste itens do catálogo, com o volume ocupado em tempo real",
+        caption: "O canvas de verdade, escolha o caminhão e arraste itens do catálogo, com o volume ocupado em tempo real",
         layout: "imageFull",
         paragraphs: [
           "O catálogo tem 40+ itens com dimensões reais. Ao arrastar um item pro canvas, o volume é recalculado na hora e o app avisa quando a carga ultrapassa a capacidade do caminhão escolhido.",
-          "Foi a decisão de produto mais importante: em vez de um formulário chato, a pessoa quase brinca de montar a mudança — e sai com uma estimativa confiável antes de falar com qualquer transportadora.",
+          "Foi a decisão de produto mais importante: em vez de um formulário chato, a pessoa quase brinca de montar a mudança, e sai com uma estimativa confiável antes de falar com qualquer transportadora.",
         ],
       },
       {
@@ -125,7 +125,7 @@ export const projects: Project[] = [
         layout: "imageLeft",
         paragraphs: [
           "Quatro passos claros: montar o inventário no canvas, escolher o tamanho do caminhão, receber cotações automáticas com data, seguro e preço, e confirmar a melhor oferta.",
-          "Cada etapa foi desenhada pra reduzir incerteza — o usuário sempre sabe onde está e o que falta pra fechar.",
+          "Cada etapa foi desenhada pra reduzir incerteza, o usuário sempre sabe onde está e o que falta pra fechar.",
         ],
       },
       {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
         caption: "Paywall que empurra valor sem irritar",
         layout: "imageRight",
         paragraphs: [
-          "O plano Grátis deixa explorar (1 mudança, até 15 itens, 3 cotações). O PRO — R$ 29,90/mês — libera mudanças e itens ilimitados, filtros avançados e comparação lado a lado.",
+          "O plano Grátis deixa explorar (1 mudança, até 15 itens, 3 cotações). O PRO, R$ 29,90/mês, libera mudanças e itens ilimitados, filtros avançados e comparação lado a lado.",
           "Todo novo usuário começa num Trial de 14 dias com acesso PRO. O upgrade acontece via Stripe, e desenhei os paywalls (bloqueio de plano, banner de trial e card de upgrade) pra comunicar o limite dentro do fluxo, sem transformar cada clique numa parede de pagamento.",
         ],
       },
@@ -144,10 +144,10 @@ export const projects: Project[] = [
         kicker: "Desafios",
         title: "O que foi difícil (e valeu a pena)",
         bullets: [
-          "Traduzir volume 3D (m³) numa interface 2D que qualquer pessoa entende — sem pedir que ninguém pense em matemática.",
+          "Traduzir volume 3D (m³) numa interface 2D que qualquer pessoa entende, sem pedir que ninguém pense em matemática.",
           "Comunicar limites de plano (Grátis vs PRO) dentro do fluxo, sem transformar cada ação numa parede de pagamento.",
           "Comparar cotações de forma justa: mesma estrutura de data, seguro e preço, lado a lado.",
-          "Manter consistência absoluta entre landing, dashboard e checkout — resolvido com um Design System de tokens, fonte única de verdade.",
+          "Manter consistência absoluta entre landing, dashboard e checkout, resolvido com um Design System de tokens, fonte única de verdade.",
         ],
       },
       {
@@ -155,11 +155,11 @@ export const projects: Project[] = [
         title: "Uma marca, um verde",
         image: ozBrand,
         imageAlt: "Identidade do Orizon: logo, preços e cards sobre fundo verde e preto",
-        caption: "Verde só onde há ação ou sucesso — pra nunca perder força",
+        caption: "Verde só onde há ação ou sucesso, pra nunca perder força",
         layout: "imageFull",
         paragraphs: [
-          "Verde vibrante como único acento sobre preto e neutros: energia de logística com a seriedade de uma fintech. Poppins do display ao corpo. A regra de ouro do sistema é simples — verde aparece só onde há ação ou sucesso.",
-          "Abaixo, o design system que sustenta tudo isso — recriado aqui em código, a partir da mesma fonte de tokens que roda no produto.",
+          "Verde vibrante como único acento sobre preto e neutros: energia de logística com a seriedade de uma fintech. Poppins do display ao corpo. A regra de ouro do sistema é simples, verde aparece só onde há ação ou sucesso.",
+          "Abaixo, o design system que sustenta tudo isso, recriado aqui em código, a partir da mesma fonte de tokens que roda no produto.",
         ],
       },
     ],
@@ -173,9 +173,9 @@ export const projects: Project[] = [
       "Home do site Envia+: envie dinheiro para o Brasil com segurança, rapidez e zero burocracia",
     kicker: "Site institucional · Money Transfer",
     cardDesc:
-      "Envie dinheiro para o Brasil sem burocracia — do briefing de negócio à interface, pensado pra quem não tem SSN.",
+      "Envie dinheiro para o Brasil sem burocracia, do briefing de negócio à interface, pensado pra quem não tem SSN.",
     summary:
-      "A maioria dos apps de remessa é feita pra quem tem SSN e crédito nos EUA. A Envia+ nasceu pro brasileiro que não tem — e o site precisava dizer isso antes de qualquer outra coisa.",
+      "A maioria dos apps de remessa é feita pra quem tem SSN e crédito nos EUA. A Envia+ nasceu pro brasileiro que não tem, e o site precisava dizer isso antes de qualquer outra coisa.",
     meta: [
       {
         label: "Meu papel",
@@ -188,37 +188,37 @@ export const projects: Project[] = [
       },
       {
         label: "Referências visuais",
-        value: "Nubank, Wise, Inter e Nomad — adaptadas pra um público próprio",
+        value: "Nubank, Wise, Inter e Nomad, adaptadas pra um público próprio",
       },
     ],
-    screenCaption: "Home — hero + simulador de conversão",
+    screenCaption: "Home, hero + simulador de conversão",
     blocks: [
       {
         label: "Problema",
         paragraphs: [
-          "Quem envia dinheiro dos EUA pro Brasil como brasileiro imigrante — muitas vezes trabalhando informalmente em construção, limpeza, delivery ou hospitalidade — esbarra num requisito que a maior parte dos apps de remessa trata como padrão: SSN e histórico de crédito americano. Serviços como Wise e Nomad são ótimos, mas não foram desenhados pensando nesse público específico.",
+          "Quem envia dinheiro dos EUA pro Brasil como brasileiro imigrante, muitas vezes trabalhando informalmente em construção, limpeza, delivery ou hospitalidade, esbarra num requisito que a maior parte dos apps de remessa trata como padrão: SSN e histórico de crédito americano. Serviços como Wise e Nomad são ótimos, mas não foram desenhados pensando nesse público específico.",
         ],
       },
       {
         label: "Meu papel",
         paragraphs: [
-          "Entrei antes do Figma. Conduzi um briefing estruturado com o negócio — nome, propósito, missão, valores, público-alvo, aspirações, tom de voz — pra só depois definir a arquitetura de informação do site e escrever a copy seção a seção. A interface veio por último, como consequência de tudo isso.",
+          "Entrei antes do Figma. Conduzi um briefing estruturado com o negócio, nome, propósito, missão, valores, público-alvo, aspirações, tom de voz, pra só depois definir a arquitetura de informação do site e escrever a copy seção a seção. A interface veio por último, como consequência de tudo isso.",
         ],
       },
       {
         label: "Processo",
         items: [
-          "No briefing, identifiquei que a barreira real não era preço nem velocidade — era a exigência de documentação que grande parte do público não tem. Isso virou a decisão central do produto.",
-          "Transformei essa decisão em seção própria da home (“Feita pra você”), com “aceita passaporte ou ID” dito de forma explícita — não escondido em letra miúda de termos de uso.",
-          "Estruturei o storytelling da página inteira antes de desenhar: Hero → Como Funciona → Por que confiar → Depoimentos → Feita pra você → App → Fale com a gente — cada seção com hat, título, descrição e CTA já definidos em texto.",
+          "No briefing, identifiquei que a barreira real não era preço nem velocidade, era a exigência de documentação que grande parte do público não tem. Isso virou a decisão central do produto.",
+          "Transformei essa decisão em seção própria da home (“Feita pra você”), com “aceita passaporte ou ID” dito de forma explícita, não escondido em letra miúda de termos de uso.",
+          "Estruturei o storytelling da página inteira antes de desenhar: Hero → Como Funciona → Por que confiar → Depoimentos → Feita pra você → App → Fale com a gente, cada seção com hat, título, descrição e CTA já definidos em texto.",
           "Levei Nubank, Wise, Inter e Nomad como referência de fintech moderna, mas construí uma identidade própria pra não parecer clone de nenhuma delas.",
-          "Coloquei o simulador de conversão USD → BRL logo no início da jornada, antes de qualquer formulário — a pessoa entende o valor antes de precisar confiar dados.",
+          "Coloquei o simulador de conversão USD → BRL logo no início da jornada, antes de qualquer formulário, a pessoa entende o valor antes de precisar confiar dados.",
         ],
       },
       {
         label: "Resultado",
         paragraphs: [
-          "Um site que não é uma tradução de fintech americana pro português — é construído em cima da dor real de quem vai usar. A decisão de produto (aceitar passaporte/ID) virou também a decisão de copy e de interface, do briefing ao pixel.",
+          "Um site que não é uma tradução de fintech americana pro português, é construído em cima da dor real de quem vai usar. A decisão de produto (aceitar passaporte/ID) virou também a decisão de copy e de interface, do briefing ao pixel.",
         ],
       },
     ],
@@ -231,7 +231,7 @@ export const projects: Project[] = [
     coverAlt: "Landing e app do Race On: corra, explore, conquiste",
     kicker: "App mobile · Produto gamificado · 2026",
     cardDesc:
-      "App que transforma corrida em jornada gamificada — geolocalização, moedas, missões e recompensas.",
+      "App que transforma corrida em jornada gamificada, geolocalização, moedas, missões e recompensas.",
     summary:
       "Um app que transforma caminhadas e corridas em jogo: geolocalização e gamificação viram moedas, missões, níveis e recompensas de verdade. A cidade é a sua arena.",
     meta: [
@@ -241,13 +241,13 @@ export const projects: Project[] = [
       { label: "Estágio", value: "MVP · piloto em Brickell & Downtown Miami" },
     ],
     heroImage: roHero,
-    heroImageAlt: "Race On em laptop e celular — landing e app",
+    heroImageAlt: "Race On em laptop e celular, landing e app",
     designSystem: "raceon",
     galleryTitle: "O app, tela a tela",
     galleryVariant: "poster",
     gallery: [
-      { id: 1, title: "O movimento virou jogo", description: "Onboarding — comece sua jornada", imageSrc: roSlide1 },
-      { id: 2, title: "Uma missão para cada dia", description: "Home — meta, progresso e ação", imageSrc: roSlide2 },
+      { id: 1, title: "O movimento virou jogo", description: "Onboarding, comece sua jornada", imageSrc: roSlide1 },
+      { id: 2, title: "Uma missão para cada dia", description: "Home, meta, progresso e ação", imageSrc: roSlide2 },
       { id: 3, title: "Escolha o seu caminho", description: "Mapa e preparação da atividade", imageSrc: roSlide3 },
       { id: 4, title: "Missões que geram recompensas", description: "Missões e loja de raridades", imageSrc: roSlide4 },
       { id: 5, title: "Agora é só correr", description: "Atividade em tempo real", imageSrc: roSlide5 },
@@ -266,7 +266,7 @@ export const projects: Project[] = [
         title: "Métrica não engaja. Jornada, sim.",
         image: roCenario,
         imageAlt: "Telas do Race On: home com meta de passos, missões, mapa e loja",
-        caption: "Do passo à meta — cada tela reforça o próximo movimento",
+        caption: "Do passo à meta, cada tela reforça o próximo movimento",
         layout: "imageRight",
         paragraphs: [
           "Muitas pessoas desejam criar uma rotina de exercícios, mas encontram dificuldades para manter a motivação e a constância. Os aplicativos tradicionais costumam concentrar a experiência apenas em métricas como distância, tempo e ritmo, o que pode não ser suficiente para engajar usuários iniciantes ou aqueles que buscam uma atividade mais dinâmica.",
@@ -276,12 +276,12 @@ export const projects: Project[] = [
         kicker: "Como funciona",
         title: "Um ciclo simples que dá vontade de voltar",
         image: roCiclo,
-        imageAlt: "Ciclo do Race On: escolha, mova-se, colete, evolua, volte — e recompensas por raridade",
+        imageAlt: "Ciclo do Race On: escolha, mova-se, colete, evolua, volte, e recompensas por raridade",
         caption: "Escolha → Mova-se → Colete → Evolua → Volte",
         layout: "imageLeft",
         paragraphs: [
-          "O ciclo combina três coisas que a pessoa já faz: se mover, explorar a cidade e ser recompensada. Caminhar e correr deixam de ser tarefa e viram progresso visível — distância, ritmo, moedas e níveis.",
-          "E as moedas viram prêmios de verdade: na Loja, elas trocam por cupons de parceiros, tênis, skins e cartas colecionáveis em três raridades — Ouro, Prata e Bronze.",
+          "O ciclo combina três coisas que a pessoa já faz: se mover, explorar a cidade e ser recompensada. Caminhar e correr deixam de ser tarefa e viram progresso visível, distância, ritmo, moedas e níveis.",
+          "E as moedas viram prêmios de verdade: na Loja, elas trocam por cupons de parceiros, tênis, skins e cartas colecionáveis em três raridades, Ouro, Prata e Bronze.",
         ],
       },
       {
@@ -299,7 +299,7 @@ export const projects: Project[] = [
         ],
         image: roDesafios,
         imageAlt: "Telas do Race On: preparar atividade, corrida ativa com timer e perfil com conquistas",
-        caption: "Segurança, anti-fraude e simplicidade — pensados desde o MVP",
+        caption: "Segurança, anti-fraude e simplicidade, pensados desde o MVP",
         layout: "imageFull",
       },
     ],

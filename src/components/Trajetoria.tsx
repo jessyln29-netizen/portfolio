@@ -4,46 +4,46 @@ type Item = { date: string; role: string; co?: string; desc: string };
 
 const items: Item[] = [
   {
-    date: "Ago 2025 — atual",
+    date: "Ago 2025 a atual",
     role: "Product Owner",
     co: "· EzPag",
     desc: "Miami, FL. Visão de produto, backlog e priorização por valor; validação de entregas e alinhamento diário com design, engenharia e agilidade.",
   },
   {
-    date: "Ago 2024 — 2025",
+    date: "Ago 2024 a 2025",
     role: "Senior Product Designer",
     co: "· EzPag",
     desc: "Roadmap e MVP, Design System no Figma, testes de usabilidade e experimentos A/B, análise de comportamento com Hotjar e GA.",
   },
   {
-    date: "Nov 2023 — Jul 2024",
+    date: "Nov 2023 a Jul 2024",
     role: "UX Designer Pleno",
     co: "· EzPag",
     desc: "Pesquisa com usuários, prototipação em múltiplos níveis de fidelidade, manutenção do Design System.",
   },
   {
-    date: "Abr 2022 — Dez 2023",
+    date: "Abr 2022 a Dez 2023",
     role: "UX Designer Pleno",
     co: "· ilegra",
     desc: "São Paulo, SP. Discovery, fluxos e prototipação em squads ágeis multiclientes.",
   },
   {
-    date: "Set 2021 — Mar 2022",
+    date: "Set 2021 a Mar 2022",
     role: "UX Designer Pleno",
     co: "· Try Consultoria",
     desc: "São Paulo, SP. Escopo, wireframes e protótipos para diferentes clientes.",
   },
   {
-    date: "Mar 2021 — Set 2021",
+    date: "Mar 2021 a Set 2021",
     role: "UX Designer Pleno",
     co: "· Genyx Solar Power",
     desc: "Contagem, MG. Interfaces, UX Research e UX Writing, com suporte de frontend básico.",
   },
   {
-    date: "2019 — 2021",
+    date: "2019 a 2021",
     role: "Marketing & Web Design",
     co: "· Dom Helder",
-    desc: "Belo Horizonte, MG. Branding, inbound marketing, landing pages e wireframes — a porta de entrada para produto e design.",
+    desc: "Belo Horizonte, MG. Branding, inbound marketing, landing pages e wireframes, a porta de entrada para produto e design.",
   },
 ];
 

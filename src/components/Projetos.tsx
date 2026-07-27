@@ -12,7 +12,7 @@ export default function Projetos() {
         <Reveal className="section-head projects-head">
           <div>
             <h2 className="section-title big">Projetos</h2>
-            <span className="section-num">02 — Trabalho selecionado</span>
+            <span className="section-num">02 · Trabalho selecionado</span>
           </div>
         </Reveal>
 

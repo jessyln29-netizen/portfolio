@@ -33,7 +33,7 @@ export default function Sobre() {
             <p className="bio">
               Tenho forte atuação em <strong>UX/UI e Design Systems</strong>, promovendo padrões,
               acessibilidade e evolução contínua da experiência. Trabalho com visão de produto,
-              equilibrando necessidades do negócio, restrições técnicas e expectativas do usuário —
+              equilibrando necessidades do negócio, restrições técnicas e expectativas do usuário,
               sempre com foco em impacto real.
             </p>
             <p className="bio">

@@ -48,7 +48,7 @@ const raios: [string, number][] = [
 ];
 const breakpoints: [string, string, string][] = [
   ["sm", "640px", "Layout do app cabe no telefone"],
-  ["md", "768px", "Landing — nav completa"],
+  ["md", "768px", "Landing, nav completa"],
   ["lg", "1024px", "Grids de recompensas em 3 colunas"],
   ["xl", "1280px", "Widescreen da landing"],
 ];
@@ -195,7 +195,7 @@ export default function RaceOnStyleGuide() {
           <span>Escala 4px, raios generosos e breakpoints mobile-first.</span>
         </div>
 
-        <p className="ro-group-label">Espaçamento — base 4px</p>
+        <p className="ro-group-label">Espaçamento · base 4px</p>
         <div className="ro-space">
           {espacos.map(([n, px]) => (
             <div className="ro-space-row" key={n}>
