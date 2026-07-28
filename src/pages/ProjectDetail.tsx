@@ -5,6 +5,7 @@ import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
 import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
 import EnviaStyleGuide from "../components/EnviaStyleGuide";
+import CreationStages from "../components/CreationStages";
 import CardStack from "../components/CardStack";
 
 const ArrowLeft = () => (
@@ -154,6 +155,7 @@ export default function ProjectDetail() {
         </>
       )}
 
+      {project.id === "envia" && <CreationStages />}
       {project.designSystem === "orizon" && <DesignSystemShowcase />}
       {project.designSystem === "raceon" && <RaceOnStyleGuide />}
       {project.designSystem === "envia" && <EnviaStyleGuide />}
