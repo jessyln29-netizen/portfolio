@@ -22,6 +22,10 @@ import roSlide3 from "../assets/ro-slide3.webp";
 import roSlide4 from "../assets/ro-slide4.webp";
 import roSlide5 from "../assets/ro-slide5.webp";
 import roSlide6 from "../assets/ro-slide6.webp";
+import enHero from "../assets/en-hero.webp";
+import enIntro from "../assets/en-intro.webp";
+import enCenario from "../assets/en-cenario.webp";
+import enDesafios from "../assets/en-desafios.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -171,55 +175,55 @@ export const projects: Project[] = [
     cover: envia,
     coverAlt:
       "Home do site Envia+: envie dinheiro para o Brasil com segurança, rapidez e zero burocracia",
-    kicker: "Site institucional · Money Transfer",
+    kicker: "App · Transferências internacionais · 2026",
     cardDesc:
-      "Envie dinheiro para o Brasil sem burocracia, do briefing de negócio à interface, pensado pra quem não tem SSN.",
+      "Transferências internacionais EUA → Brasil: rápido, seguro e transparente, feito pro brasileiro imigrante.",
     summary:
-      "A maioria dos apps de remessa é feita pra quem tem SSN e crédito nos EUA. A Envia+ nasceu pro brasileiro que não tem, e o site precisava dizer isso antes de qualquer outra coisa.",
+      "Uma plataforma de transferências internacionais que aproxima brasileiros nos EUA de suas famílias no Brasil, transformando o envio de dinheiro num processo simples, seguro e sem burocracia.",
     meta: [
-      {
-        label: "Meu papel",
-        value:
-          "Briefing de produto, arquitetura de informação, UX Writing e interface (Figma)",
-      },
-      {
-        label: "Empresa",
-        value: "Envia+, a marca de remessa internacional do grupo EzPag",
-      },
-      {
-        label: "Referências visuais",
-        value: "Nubank, Wise, Inter e Nomad, adaptadas pra um público próprio",
-      },
+      { label: "Meu papel", value: "Product Design, identidade de marca, UX/UI e Design System" },
+      { label: "Tipo", value: "App mobile + landing · Money transfer" },
+      { label: "Empresa", value: "Envia+, do grupo EzPag" },
+      { label: "Ano", value: "2026" },
     ],
     designSystem: "envia",
-    screenCaption: "Home, hero + simulador de conversão",
-    blocks: [
+    heroImage: enHero,
+    heroImageAlt:
+      "Experiência Envia+ em vários celulares: home, transferências e calculadora de câmbio",
+    sections: [
       {
-        label: "Problema",
+        kicker: "Introdução",
+        title: "Dinheiro que atravessa a fronteira sem atrito",
+        layout: "imageFull",
+        image: enIntro,
+        imageAlt:
+          "Onboarding do Envia+: login, verificação de telefone e conta criada com sucesso",
+        caption: "Onboarding: uma experiência simples desde o primeiro acesso",
         paragraphs: [
-          "Quem envia dinheiro dos EUA pro Brasil como brasileiro imigrante, muitas vezes trabalhando informalmente em construção, limpeza, delivery ou hospitalidade, esbarra num requisito que a maior parte dos apps de remessa trata como padrão: SSN e histórico de crédito americano. Serviços como Wise e Nomad são ótimos, mas não foram desenhados pensando nesse público específico.",
+          "A Envia+ é uma plataforma de transferências internacionais criada para aproximar brasileiros que vivem nos Estados Unidos de suas famílias no Brasil. A proposta é oferecer uma experiência rápida, segura e transparente, transformando o envio de dinheiro em um processo simples, acessível e sem burocracias desnecessárias.",
         ],
       },
       {
-        label: "Meu papel",
+        kicker: "Cenário",
+        title: "Uma renda que cruza fronteiras",
+        layout: "imageFull",
+        image: enCenario,
+        imageAlt:
+          "Jornada de transferência do Envia+: beneficiário, motivo, pagamento e confirmação",
+        caption: "Da escolha ao envio, cada etapa flui",
         paragraphs: [
-          "Entrei antes do Figma. Conduzi um briefing estruturado com o negócio, nome, propósito, missão, valores, público-alvo, aspirações, tom de voz, pra só depois definir a arquitetura de informação do site e escrever a copy seção a seção. A interface veio por último, como consequência de tudo isso.",
+          "Milhares de brasileiros que vivem nos Estados Unidos enviam dinheiro regularmente para o Brasil, contribuindo com despesas familiares, projetos pessoais e planos para o futuro. Muitos desses imigrantes possuem renda variável, trabalham em setores como construção, limpeza, delivery e hospitalidade e encontram dificuldades para utilizar serviços financeiros tradicionais. Nesse contexto, eles procuram uma solução confiável, fácil de entender e preparada para a sua realidade.",
         ],
       },
       {
-        label: "Processo",
-        items: [
-          "No briefing, identifiquei que a barreira real não era preço nem velocidade, era a exigência de documentação que grande parte do público não tem. Isso virou a decisão central do produto.",
-          "Transformei essa decisão em seção própria da home (“Feita pra você”), com “aceita passaporte ou ID” dito de forma explícita, não escondido em letra miúda de termos de uso.",
-          "Estruturei o storytelling da página inteira antes de desenhar: Hero → Como Funciona → Por que confiar → Depoimentos → Feita pra você → App → Fale com a gente, cada seção com hat, título, descrição e CTA já definidos em texto.",
-          "Levei Nubank, Wise, Inter e Nomad como referência de fintech moderna, mas construí uma identidade própria pra não parecer clone de nenhuma delas.",
-          "Coloquei o simulador de conversão USD → BRL logo no início da jornada, antes de qualquer formulário, a pessoa entende o valor antes de precisar confiar dados.",
-        ],
-      },
-      {
-        label: "Resultado",
+        kicker: "Desafios",
+        title: "Transmitir segurança sem parecer complexo",
+        layout: "imageFull",
+        image: enDesafios,
+        imageAlt: "Fluxo de identidade e comprovante do Envia+: confiança em cada etapa",
+        caption: "Confiança em cada etapa: documento, comprovante e status transparente",
         paragraphs: [
-          "Um site que não é uma tradução de fintech americana pro português, é construído em cima da dor real de quem vai usar. A decisão de produto (aceitar passaporte/ID) virou também a decisão de copy e de interface, do briefing ao pixel.",
+          "O principal desafio foi desenvolver uma experiência digital capaz de transmitir segurança sem parecer complexa ou distante. A solução precisava simplificar cada etapa da transferência, apresentar informações e valores com transparência e criar uma comunicação próxima e acolhedora. Além da eficiência, era fundamental construir uma identidade que valorizasse o público brasileiro e fortalecesse a confiança necessária para movimentar dinheiro entre países.",
         ],
       },
     ],
