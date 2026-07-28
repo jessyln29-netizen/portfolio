@@ -5,7 +5,7 @@ type Item = { date: string; role: string; co?: string; desc: string };
 const items: Item[] = [
   {
     date: "Ago 2025 a atual",
-    role: "Product Owner",
+    role: "Product Designer Sênior",
     co: "· EzPag",
     desc: "Miami, FL. Visão de produto, backlog e priorização por valor; validação de entregas e alinhamento diário com design, engenharia e agilidade.",
   },

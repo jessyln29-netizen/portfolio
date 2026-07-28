@@ -10,8 +10,8 @@ export default function Contato() {
         </Reveal>
         <Reveal>
           <p>
-            Aberta a oportunidades de Product Owner ou Product Design em times que valorizam tanto a
-            visão de negócio quanto a experiência de quem usa o produto.
+            Aberta a oportunidades de Product Design e UX em times que valorizam tanto a visão de
+            negócio quanto a experiência de quem usa o produto.
           </p>
         </Reveal>
         <Reveal className="contact-links" delay={0.1}>

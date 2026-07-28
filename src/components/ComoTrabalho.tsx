@@ -26,9 +26,6 @@ export default function ComoTrabalho() {
           <h2 className="section-title">Como eu trabalho</h2>
           <span className="section-num">03</span>
         </Reveal>
-        <Reveal>
-          <p className="section-sub">O mesmo ciclo por trás do pill lá em cima, só que por extenso.</p>
-        </Reveal>
         <Reveal className="method-grid" delay={0.1}>
           {steps.map((s) => (
             <div className="method-item" key={s.num}>

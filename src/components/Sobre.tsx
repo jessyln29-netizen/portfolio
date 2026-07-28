@@ -21,7 +21,7 @@ export default function Sobre() {
         <div className="sobre-grid">
           <Reveal className="sobre-text">
             <p className="bio">
-              Com experiência em produtos digitais e atuação <strong>design-led</strong> para criar
+              Tenho experiência em produtos digitais e atuação <strong>design-led</strong> para criar
               experiências claras, escaláveis e orientadas a resultados.
             </p>
             <p className="bio">
@@ -57,16 +57,16 @@ export default function Sobre() {
           <Reveal className="sobre-aside" delay={0.1}>
             <div className="hero-meta">
               <div>
-                <strong>Contagem, MG</strong>atuando remoto para times no Brasil e nos EUA
+                <strong>Residente em Contagem, MG</strong>Atuação remota para times do Brasil e EUA
               </div>
               <div>
-                <strong>6+ anos</strong>transitando entre design, pesquisa e produto
+                <strong>6+ anos</strong>Transitando entre design, pesquisa e produto
               </div>
               <div>
-                <strong>Setor atual</strong>fintech de crédito e rent-to-own
+                <strong>Setor Atual</strong>Fintech de crédito e rent-to-own
               </div>
               <div>
-                <strong>Hoje</strong>Product Owner na EzPag
+                <strong>Hoje</strong>Product Designer Sênior na EzPag
               </div>
             </div>
           </Reveal>
