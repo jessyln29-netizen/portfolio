@@ -4,16 +4,10 @@ type Item = { date: string; role: string; co?: string; desc: string };
 
 const items: Item[] = [
   {
-    date: "Ago 2025 a atual",
+    date: "Ago 2024 a atual",
     role: "Product Designer Sênior",
     co: "· EzPag",
-    desc: "Miami, FL. Visão de produto, backlog e priorização por valor; validação de entregas e alinhamento diário com design, engenharia e agilidade.",
-  },
-  {
-    date: "Ago 2024 a 2025",
-    role: "Senior Product Designer",
-    co: "· EzPag",
-    desc: "Roadmap e MVP, Design System no Figma, testes de usabilidade e experimentos A/B, análise de comportamento com Hotjar e GA.",
+    desc: "Miami, FL. Roadmap e MVP, Design System no Figma, testes de usabilidade e experimentos A/B, com análise de comportamento (Hotjar, GA) e alinhamento diário com produto e engenharia.",
   },
   {
     date: "Nov 2023 a Jul 2024",
