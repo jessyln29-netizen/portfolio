@@ -6,6 +6,7 @@ import DesignSystemShowcase from "../components/DesignSystemShowcase";
 import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
 import EnviaStyleGuide from "../components/EnviaStyleGuide";
 import CreationStages from "../components/CreationStages";
+import EnviaAppCta from "../components/EnviaAppCta";
 import CardStack from "../components/CardStack";
 
 const ArrowLeft = () => (
@@ -161,6 +162,7 @@ export default function ProjectDetail() {
       {project.designSystem === "orizon" && <DesignSystemShowcase />}
       {project.designSystem === "raceon" && <RaceOnStyleGuide />}
       {project.designSystem === "envia" && <EnviaStyleGuide />}
+      {project.id === "envia" && <EnviaAppCta />}
 
       <div className="pd-nav-next">
         <button className="back-btn" onClick={() => navigate(`/projeto/${next.id}`)}>
