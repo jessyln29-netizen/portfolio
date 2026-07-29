@@ -26,6 +26,8 @@ import enHero from "../assets/en-hero.webp";
 import enIntro from "../assets/en-intro.webp";
 import enCenario from "../assets/en-cenario.webp";
 import enDesafios from "../assets/en-desafios.webp";
+import enCta from "../assets/en-cta.webp";
+import ozCta from "../assets/oz-cta.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -61,6 +63,7 @@ export type Project = {
   galleryTitle?: string;
   galleryVariant?: "landscape" | "poster";
   designSystem?: "orizon" | "raceon" | "envia";
+  appCta?: { image: string; url: string; alt: string; accent?: string; accentText?: string };
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
   blocks?: ProjectBlock[];
@@ -88,6 +91,13 @@ export const projects: Project[] = [
     heroImage: ozDevices,
     heroImageAlt: "Orizon Mudanças em laptop, tablet e celular, landing e dashboard",
     designSystem: "orizon",
+    appCta: {
+      image: ozCta,
+      url: "https://looptech-omega.vercel.app/",
+      alt: "Conheça a Orizon: sua mudança organizada do início ao fim, em laptop e tablet",
+      accent: "#7FBA00",
+      accentText: "#0D0D0D",
+    },
     galleryTitle: "O fluxo, tela a tela",
     gallery: [
       { id: 1, title: "Nova mudança", description: "Origem, destino e tamanho da casa em segundos", imageSrc: ozFlow1 },
@@ -187,6 +197,13 @@ export const projects: Project[] = [
       { label: "Ano", value: "2026" },
     ],
     designSystem: "envia",
+    appCta: {
+      image: enCta,
+      url: "https://jessyln29-netizen.github.io/envia-plus/app/",
+      alt: "Conheça o app Envia+: transferências internacionais simples, seguras e transparentes",
+      accent: "#5B0CD8",
+      accentText: "#ffffff",
+    },
     heroImage: enHero,
     heroImageAlt:
       "Experiência Envia+ em vários celulares: home, transferências e calculadora de câmbio",
