@@ -532,7 +532,7 @@ export const aiProjects: Project[] = [
       alt: "Teste o protótipo do Ezcall: ligações transcritas, resumidas e medidas",
       accent: "#6691FF",
       accentText: "#ffffff",
-      label: "Testar o protótipo",
+      label: "Abrir protótipo · requer senha",
     },
     galleryTitle: "O produto, tela a tela",
     gallery: [
@@ -787,7 +787,7 @@ export const aiProjects: Project[] = [
       alt: "Teste o protótipo do Antifraude: a análise em 5 etapas, com o informe de risco sempre à vista",
       accent: "#39DDA2",
       accentText: "#0F241A",
-      label: "Testar o protótipo",
+      label: "Abrir protótipo · requer senha",
     },
     galleryTitle: "O protótipo, etapa a etapa",
     gallery: [
