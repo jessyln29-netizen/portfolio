@@ -28,6 +28,20 @@ import enCenario from "../assets/en-cenario.webp";
 import enDesafios from "../assets/en-desafios.webp";
 import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
+import ezCover from "../assets/ez-cover.webp";
+import ezLista from "../assets/ez-lista.webp";
+import ezDetalhe from "../assets/ez-detalhe.webp";
+import ezVendas from "../assets/ez-vendas.webp";
+import ezFunil from "../assets/ez-funil.webp";
+import ezObjecoes from "../assets/ez-objecoes.webp";
+import ezCobranca from "../assets/ez-cobranca.webp";
+import ezSlide01 from "../assets/ez-slide01.webp";
+import ezSlide02 from "../assets/ez-slide02.webp";
+import ezSlide04 from "../assets/ez-slide04.webp";
+import ezSlide12 from "../assets/ez-slide12.webp";
+import ezSlide13 from "../assets/ez-slide13.webp";
+import ezSlide14 from "../assets/ez-slide14.webp";
+import ezSlide15 from "../assets/ez-slide15.webp";
 
 export type ProjectBlock =
   | { label: string; paragraphs: string[] }
@@ -329,7 +343,156 @@ export const projects: Project[] = [
 ];
 
 /** Projetos criados com apoio de IA (seção "Projetos IA"). Adicione aqui. */
-export const aiProjects: Project[] = [];
+export const aiProjects: Project[] = [
+  {
+    id: "ezcall",
+    name: "Ezcall",
+    tag: "IA aplicada · Produto interno",
+    cover: ezCover,
+    coverAlt: "Tela de ligações do Ezcall: lista de atendimentos transcritos e resumidos, com resultado e atendente",
+    kicker: "Inteligência de atendimento com IA · EzPag · 2026",
+    cardDesc:
+      "De repositório de gravações a uma camada de análise com IA para vendas, cobrança e produto.",
+    summary:
+      "O Ezcall gravava e transcrevia todas as ligações de vendas e cobrança, mas ninguém lia esse material. Usei IA para analisar 98 transcrições, encontrar onde o cliente realmente trava e transformar esse diagnóstico em produto: um pipeline de análise e as telas de desempenho, produto e operação.",
+    meta: [
+      { label: "Meu papel", value: "PO & Product Designer: discovery, análise, especificação e protótipo" },
+      { label: "Tipo", value: "Produto interno · Inteligência de atendimento" },
+      { label: "IA no processo", value: "Claude: leitura das transcrições, protótipo funcional e apresentação" },
+      { label: "Ano", value: "2026" },
+    ],
+    heroImage: ezDetalhe,
+    heroImageAlt:
+      "Detalhe de uma ligação no Ezcall: transcrição separada por falante, resumo, próximos passos e tempo de fala",
+    sections: [
+      {
+        kicker: "Ponto de partida",
+        title: "Um arquivo completo, e mudo",
+        image: ezSlide02,
+        imageAlt: "Slide: o que já funciona, o que falta e o que fizemos",
+        caption: "A infraestrutura já existia. Faltava a camada que lê o material e devolve decisão.",
+        layout: "imageFull",
+        paragraphs: [
+          "O Ezcall é o programa interno da EzPag que grava e transcreve toda conversa entre o time e o cliente, amarrada ao pedido e ao atendente. Era um repositório completo e, ao mesmo tempo, mudo: o que o cliente dizia todos os dias não virava informação para ninguém.",
+          "O pedido era evoluir o Ezcall usando IA para analisar as ligações: medir o desempenho de cada atendimento e de cada vendedor, captar reclamações e dificuldades do cliente, e descobrir o que mais estava escondido ali.",
+        ],
+      },
+      {
+        kicker: "Como a IA entrou",
+        title: "98 transcrições lidas antes de desenhar qualquer tela",
+        paragraphs: [
+          "Em vez de começar pelo dashboard, comecei pelo material. Usei o Claude como parceiro de análise para ler integralmente 98 transcrições reais: 52 de cobrança, 32 de venda, 9 de suporte, 3 de pós-venda e 2 de pesquisa de experiência.",
+          "A IA fez a leitura em escala e a primeira classificação. As perguntas, os critérios e a validação foram meus: o que separa uma boa ligação de uma ruim, o que é responsabilidade do atendente e o que é atrito de produto, e se cada número batia com a sua base antes de ir para a liderança.",
+        ],
+        bullets: [
+          "Dados estruturados da ligação: modelo, valores, dia de cobrança, desfecho.",
+          "Aderência ao roteiro: um checklist por etapa, que vira nota por ligação e média por vendedor.",
+          "Qualidade da condução: descoberta, tratamento de objeções e próximo passo com data e hora.",
+          "Voz do cliente: objeções, dúvidas e atritos que se repetem.",
+          "Risco de conformidade: o que precisa de revisão humana antes de virar problema.",
+        ],
+      },
+      {
+        kicker: "O achado principal",
+        title: "Não era preço. Era processo.",
+        image: ezSlide04,
+        imageAlt: "Slide: o que mais trava a empresa não é preço",
+        layout: "imageFull",
+        paragraphs: [
+          "Em vendas, o cliente que já decidiu comprar para na documentação: o pedido de anexos chega em etapas, e a cada novo pedido a entrega é empurrada. Em cobrança, o caso mais comum é o aparelho estar com quem não assinou o contrato.",
+          "Nos dois casos, o problema é processo, não argumento de venda. Essa leitura mudou a pergunta do projeto: não bastava avaliar vendedor, era preciso mostrar ao produto onde a operação trava.",
+        ],
+      },
+      {
+        kicker: "Do diagnóstico ao produto",
+        title: "Um pipeline com evidência em cada número",
+        image: ezLista,
+        imageAlt: "Lista de ligações do Ezcall com resumo, resultado, atendente, duração e data",
+        caption: "Todas as ligações transcritas e resumidas, com o desfecho de cada uma",
+        layout: "imageRight",
+        paragraphs: [
+          "Desenhei o pipeline de processamento: classificar o tipo de ligação, extrair dados estruturados com evidência obrigatória em um trecho da transcrição, e atribuir o atendente pelo cadastro, nunca pelo que é dito na ligação.",
+          "Também revisei a régua de avaliação usada em vendas e propus critérios ancorados em comportamento observável, para que cada nota pudesse ser conferida no trecho que a sustenta.",
+        ],
+      },
+      {
+        kicker: "Desempenho de vendas",
+        title: "Separar o que é do vendedor do que é do produto",
+        image: ezVendas,
+        imageAlt: "Tela de desempenho de vendas: indicadores e atrito de processo por etapa",
+        caption: "Indicadores do time e as etapas onde o cliente trava durante o fechamento",
+        layout: "imageLeft",
+        paragraphs: [
+          "A tela de desempenho mostra conversão, tempo de ligação, clareza na explicação da quitação e onde cada ligação parou. O bloco de atrito de processo isola o tempo gasto com documentação, validação de cartão e assinatura: tempo que depende do produto, não do vendedor.",
+          "Todo número é clicável e leva às ligações e ao trecho que o sustenta. Onde o dado ainda depende do pipeline ou dos dados de contrato, a tela diz isso em vez de inventar um valor.",
+        ],
+      },
+      {
+        kicker: "Cobrança",
+        title: "A área de maior volume era a que menos enxergávamos",
+        image: ezCobranca,
+        imageAlt: "Tela de desempenho de cobrança: indicadores, funil do bloqueio e falha de sincronização",
+        caption: "Cobrança acontece toda semana e, até aqui, não gerava nenhuma informação estruturada",
+        layout: "imageRight",
+        paragraphs: [
+          "Fechamento acontece uma vez por cliente; cobrança acontece toda semana, por meses. Mais da metade das ligações lidas era de cobrança, e o sistema não produzia nada sobre ela.",
+          "Especifiquei os indicadores dessa área: funil do bloqueio, falhas de desbloqueio por falta de conexão, conciliação de pagamento e quem está na linha quando não é o titular.",
+        ],
+      },
+      {
+        kicker: "O que muda",
+        title: "Uma leitura, três áreas",
+        image: ezSlide12,
+        imageAlt: "Slide: cada ligação vira informação para produto, pessoas e operação",
+        layout: "imageFull",
+        paragraphs: [
+          "A mesma leitura automática alimenta produto (onde o cliente trava e quanto tempo isso custa), pessoas (devolutiva sobre a etapa exata a corrigir e ligações-modelo para treinamento) e operação (bloqueios, conciliação e promessas conferíveis contra o sistema).",
+        ],
+      },
+      {
+        kicker: "O ganho maior",
+        title: "Venda, contrato e cobrança na mesma linha",
+        image: ezSlide13,
+        imageAlt: "Slide: ligação de venda, contrato e cobrança ligados pelo número do contrato",
+        layout: "imageFull",
+        paragraphs: [
+          "O número do contrato liga o que foi prometido na venda, o que foi assinado e o que foi vivido na cobrança. Não é um projeto de integração, é uma consulta, e responde perguntas que a empresa ainda não conseguia fazer.",
+        ],
+      },
+      {
+        kicker: "Entrega",
+        title: "Do diagnóstico à aprovação com a liderança",
+        image: ezSlide14,
+        imageAlt: "Slide: três decisões para começar",
+        layout: "imageFull",
+        paragraphs: [
+          "Montei o protótipo funcional e a apresentação com apoio de IA e levei o caso para CTO e CEO, com as dependências técnicas e as três decisões necessárias para a implementação: separar quem fala na transcrição, abrir os dados de contrato e escrever o padrão de atendimento a partir das melhores ligações do próprio time.",
+        ],
+      },
+      {
+        kicker: "Desafios",
+        title: "O que foi difícil",
+        bullets: [
+          "Transcrições em texto corrido, sem separar cliente e atendente nem marcar tempo: isso limitava o que dava para medir, e virou uma das decisões levadas à liderança.",
+          "Manter cada número fiel à sua base. Revisei as contagens entre os slides e as telas para que nenhum indicador parecesse contradizer outro.",
+          "Avaliar pessoas com justiça: separar falha de condução de atrito causado pelo produto.",
+          "Tratar dados reais com cuidado: nomes de clientes e do time foram substituídos nas telas deste case.",
+        ],
+      },
+    ],
+    galleryTitle: "O produto, tela a tela",
+    gallery: [
+      { id: 1, title: "Ligações", description: "Todas as ligações transcritas, resumidas e com desfecho", imageSrc: ezLista },
+      { id: 2, title: "Detalhe da ligação", description: "Transcrição por falante, resumo, próximos passos e tempo de fala", imageSrc: ezDetalhe },
+      { id: 3, title: "Desempenho de vendas", description: "Indicadores do time e atrito de processo por etapa", imageSrc: ezVendas },
+      { id: 4, title: "Funil de desfecho", description: "Como as ligações de fechamento terminam e por quê", imageSrc: ezFunil },
+      { id: 5, title: "Objeções e ranking", description: "Frequência, taxa de quebra e visão por vendedor", imageSrc: ezObjecoes },
+      { id: 6, title: "Desempenho de cobrança", description: "Bloqueio, desbloqueio e falhas de sincronização", imageSrc: ezCobranca },
+      { id: 7, title: "A apresentação", description: "O que as ligações estão dizendo", imageSrc: ezSlide01 },
+      { id: 8, title: "Fechamento", description: "A resposta já está gravada. Falta perguntar.", imageSrc: ezSlide15 },
+    ],
+  },
+];
 
 export const getProject = (id?: string) =>
   projects.find((p) => p.id === id) ?? aiProjects.find((p) => p.id === id);

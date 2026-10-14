@@ -71,9 +71,9 @@ export default function ProjectDetail() {
   }
 
   const isAi = aiProjects.some((p) => p.id === project.id);
-  const list = isAi ? aiProjects : projects;
-  const index = list.findIndex((p) => p.id === project.id);
-  const next = list[(index + 1) % list.length];
+  const all = [...aiProjects, ...projects];
+  const index = all.findIndex((p) => p.id === project.id);
+  const next = all[(index + 1) % all.length];
   const rich = !!project.sections;
 
   return (
