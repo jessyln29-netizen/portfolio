@@ -37,7 +37,7 @@ export default function Hero() {
         <span />
       </div>
       <div className="hx-inner">
-        <motion.a className="hx-badge" href="#trabalho" onClick={scrollTo("trabalho")} {...up(0.05)}>
+        <motion.a className="hx-badge" href="#projetos-ia" onClick={scrollTo("projetos-ia")} {...up(0.05)}>
           <svg
             className="hx-rocket"
             viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ export default function Hero() {
             </svg>
             Fale comigo
           </a>
-          <a className="hx-btn hx-btn-primary" href="#trabalho" onClick={scrollTo("trabalho")}>
+          <a className="hx-btn hx-btn-primary" href="#projetos-ia" onClick={scrollTo("projetos-ia")}>
             Ver projetos
             <ArrowRight className="hx-arrow" />
           </a>

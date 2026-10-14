@@ -47,7 +47,7 @@ export default function Trajetoria() {
       <div className="wrap">
         <Reveal className="section-head">
           <h2 className="section-title">Trajetória</h2>
-          <span className="section-num">04</span>
+          <span className="section-num">05</span>
         </Reveal>
         <div className="timeline">
           {items.map((it, i) => (

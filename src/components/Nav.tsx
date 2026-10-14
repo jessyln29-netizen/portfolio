@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 const links = [
   { label: "Sobre", id: "sobre" },
-  { label: "Projetos", id: "trabalho" },
+  { label: "Projetos IA", id: "projetos-ia" },
+  { label: "Projetos pessoais", id: "trabalho" },
   { label: "Trajetória", id: "trajetoria" },
   { label: "Formação", id: "formacoes" },
   { label: "Contato", id: "contato" },

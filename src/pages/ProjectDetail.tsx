@@ -1,6 +1,6 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { getProject, projects, type CaseSection } from "../data/projects";
+import { getProject, projects, aiProjects, type CaseSection } from "../data/projects";
 import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
 import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
@@ -70,8 +70,10 @@ export default function ProjectDetail() {
     );
   }
 
-  const index = projects.findIndex((p) => p.id === project.id);
-  const next = projects[(index + 1) % projects.length];
+  const isAi = aiProjects.some((p) => p.id === project.id);
+  const list = isAi ? aiProjects : projects;
+  const index = list.findIndex((p) => p.id === project.id);
+  const next = list[(index + 1) % list.length];
   const rich = !!project.sections;
 
   return (
@@ -83,7 +85,7 @@ export default function ProjectDetail() {
       style={{ paddingBottom: 40 }}
     >
       <div className="back-bar">
-        <button className="back-btn" onClick={() => navigate("/#trabalho")}>
+        <button className="back-btn" onClick={() => navigate(isAi ? "/#projetos-ia" : "/#trabalho")}>
           <ArrowLeft /> Voltar para projetos
         </button>
       </div>

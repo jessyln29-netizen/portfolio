@@ -35,7 +35,7 @@ export default function Formacao() {
       <div className="wrap">
         <Reveal className="section-head">
           <h2 className="section-title">Formação</h2>
-          <span className="section-num">05</span>
+          <span className="section-num">06</span>
         </Reveal>
         <div className="timeline">
           {items.map((it, i) => (

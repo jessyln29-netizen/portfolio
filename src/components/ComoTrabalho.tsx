@@ -34,7 +34,7 @@ export default function ComoTrabalho() {
       <div className="wrap">
         <Reveal className="section-head">
           <h2 className="section-title">Como eu trabalho</h2>
-          <span className="section-num">03</span>
+          <span className="section-num">04</span>
         </Reveal>
         <Reveal className="method-grid" delay={0.1}>
           {steps.map((s) => (

@@ -1,23 +1,33 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
-import { projects } from "../data/projects";
+import { projects, aiProjects, type Project } from "../data/projects";
 
-export default function Projetos() {
+type Props = {
+  id: string;
+  title: string;
+  num: string;
+  list: Project[];
+  emptyText?: string;
+};
+
+function ProjectsSection({ id, title, num, list, emptyText }: Props) {
   const navigate = useNavigate();
 
   return (
-    <section id="trabalho">
+    <section id={id}>
       <div className="wrap">
         <Reveal className="section-head projects-head">
           <div>
-            <h2 className="section-title big">Projetos</h2>
-            <span className="section-num">02 · Trabalho selecionado</span>
+            <h2 className="section-title big">{title}</h2>
+            <span className="section-num">{num}</span>
           </div>
         </Reveal>
 
+        {list.length === 0 && emptyText && <p className="projects-empty">{emptyText}</p>}
+
         <div className="projects-grid">
-          {projects.map((p, i) => (
+          {list.map((p, i) => (
             <motion.button
               key={p.id}
               className="project-card"
@@ -53,4 +63,20 @@ export default function Projetos() {
       </div>
     </section>
   );
+}
+
+export function ProjetosIA() {
+  return (
+    <ProjectsSection
+      id="projetos-ia"
+      title="Projetos criados com apoio da IA"
+      num="02 · Design + IA"
+      list={aiProjects}
+      emptyText="Novos projetos entram aqui em breve."
+    />
+  );
+}
+
+export default function Projetos() {
+  return <ProjectsSection id="trabalho" title="Projetos pessoais" num="03 · Trabalho selecionado" list={projects} />;
 }

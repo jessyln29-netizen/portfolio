@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import LogosMarquee from "../components/LogosMarquee";
 import Sobre from "../components/Sobre";
-import Projetos from "../components/Projetos";
+import Projetos, { ProjetosIA } from "../components/Projetos";
 import ComoTrabalho from "../components/ComoTrabalho";
 import Trajetoria from "../components/Trajetoria";
 import Formacao from "../components/Formacao";
@@ -19,6 +19,7 @@ export default function Home() {
       <Hero />
       <LogosMarquee />
       <Sobre />
+      <ProjetosIA />
       <Projetos />
       <ComoTrabalho />
       <Trajetoria />

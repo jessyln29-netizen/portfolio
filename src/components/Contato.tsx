@@ -6,7 +6,7 @@ export default function Contato() {
       <div className="wrap">
         <Reveal className="section-head">
           <h2 className="section-title">Vamos conversar</h2>
-          <span className="section-num">06</span>
+          <span className="section-num">07</span>
         </Reveal>
         <Reveal>
           <p>

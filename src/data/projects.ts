@@ -328,5 +328,8 @@ export const projects: Project[] = [
   },
 ];
 
+/** Projetos criados com apoio de IA (seção "Projetos IA"). Adicione aqui. */
+export const aiProjects: Project[] = [];
+
 export const getProject = (id?: string) =>
-  projects.find((p) => p.id === id);
+  projects.find((p) => p.id === id) ?? aiProjects.find((p) => p.id === id);
