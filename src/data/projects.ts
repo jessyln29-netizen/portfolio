@@ -454,7 +454,7 @@ export const aiProjects: Project[] = [
         image: ezLista,
         imageAlt: "Lista de ligações do Ezcall com resumo, resultado, atendente, duração e data",
         caption: "Todas as ligações transcritas e resumidas, com o desfecho de cada uma",
-        layout: "imageRight",
+        layout: "imageFull",
         paragraphs: [
           "Desenhei o pipeline de processamento: classificar o tipo de ligação, extrair dados estruturados com evidência obrigatória em um trecho da transcrição, e atribuir o atendente pelo cadastro, nunca pelo que é dito na ligação.",
           "Também revisei a régua de avaliação usada em vendas e propus critérios ancorados em comportamento observável, para que cada nota pudesse ser conferida no trecho que a sustenta.",
@@ -466,7 +466,7 @@ export const aiProjects: Project[] = [
         image: ezVendas,
         imageAlt: "Tela de desempenho de vendas: indicadores e atrito de processo por etapa",
         caption: "Indicadores do time e as etapas onde o cliente trava durante o fechamento",
-        layout: "imageLeft",
+        layout: "imageFull",
         paragraphs: [
           "A tela de desempenho mostra conversão, tempo de ligação, clareza na explicação da quitação e onde cada ligação parou. O bloco de atrito de processo isola o tempo gasto com documentação, validação de cartão e assinatura: tempo que depende do produto, não do vendedor.",
           "Todo número é clicável e leva às ligações e ao trecho que o sustenta. Onde o dado ainda depende do pipeline ou dos dados de contrato, a tela diz isso em vez de inventar um valor.",
@@ -478,7 +478,7 @@ export const aiProjects: Project[] = [
         image: ezCobranca,
         imageAlt: "Tela de desempenho de cobrança: indicadores, funil do bloqueio e falha de sincronização",
         caption: "Cobrança acontece toda semana e, até aqui, não gerava nenhuma informação estruturada",
-        layout: "imageRight",
+        layout: "imageFull",
         paragraphs: [
           "Fechamento acontece uma vez por cliente; cobrança acontece toda semana, por meses. Mais da metade das ligações lidas era de cobrança, e o sistema não produzia nada sobre ela.",
           "Especifiquei os indicadores dessa área: funil do bloqueio, falhas de desbloqueio por falta de conexão, conciliação de pagamento e quem está na linha quando não é o titular.",
@@ -685,7 +685,7 @@ export const aiProjects: Project[] = [
         image: afFigmaDados,
         imageAlt: "Etapa de dados iniciais na primeira versão do Figma",
         caption: "Dados iniciais na versão do Figma",
-        layout: "imageLeft",
+        layout: "imageFull",
         paragraphs: [
           "A versão do Figma validou a estrutura com o time. No protótipo funcional, levei o fluxo para o EzUI v2 em fundo claro, dei mais respiro aos blocos e transformei a etapa de encerramento em uma decisão guiada, com checklist e pendências entre times.",
           "O histórico do pedido continuou como etapa própria, e os alertas do sistema ganharam uma explicação de uma linha cada.",
@@ -708,7 +708,7 @@ export const aiProjects: Project[] = [
         image: afNovoDados,
         imageAlt: "Etapa de dados iniciais com o informe de risco fixo na lateral",
         caption: "Etapas no topo e o informe de risco fixo na lateral, em todas as etapas",
-        layout: "imageLeft",
+        layout: "imageFull",
         paragraphs: [
           "A análise foi dividida em etapas navegáveis: dados iniciais, documentação, endereço, faturamento, histórico e conclusão. Do lado, um painel fixo resume o risco da ordem, as pendências que o analista sinalizou e os alertas do sistema, cada um com o seu porquê.",
           "Na primeira etapa ficam os dados do cliente, da ordem e do contrato, e as outras ordens em blocos que abrem só quando o analista precisa.",
@@ -720,7 +720,7 @@ export const aiProjects: Project[] = [
         image: afNovoDocs,
         imageAlt: "Etapa de documentação com documentos, extratos, análise facial, comparações e histórico de documentos",
         caption: "Documentos fictícios. Cada grupo pode ser sinalizado ou reenviado ao cliente.",
-        layout: "imageRight",
+        layout: "imageFull",
         paragraphs: [
           "O histórico documental foi o pedido mais votado do workshop. Agora as versões anteriores ficam guardadas por ordem, em vez de o arquivo novo apagar o antigo.",
           "Cada grupo de documentos tem duas ações: sinalizar um problema ou copiar o link para o cliente reenviar. As comparações automáticas aparecem em uma lista que diz o que conferiu e o que pede atenção.",
@@ -731,8 +731,8 @@ export const aiProjects: Project[] = [
         title: "Endereço, mapa e vínculos em um lugar",
         image: afNovoEndereco,
         imageAlt: "Etapa de endereço com mapa de cluster, risco por CEP, teia de grupo familiar e fingerprint",
-        caption: "Tudo sobre endereço junto, como o time pediu",
-        layout: "imageLeft",
+        caption: "A teia de grupo familiar: o analista explora vínculos e vincula ou desvincula ordens. Nomes fictícios.",
+        layout: "imageFull",
         paragraphs: [
           "Antes, o mapa aparecia só no fim da tela e a validação de endereço exigia outra ferramenta. Agora a etapa reúne o endereço atual, o mapa de clusters, o risco por CEP e uma teia interativa de grupo familiar, em que o analista explora conexões e vincula ou desvincula ordens.",
         ],
@@ -743,7 +743,7 @@ export const aiProjects: Project[] = [
         image: afNovoFaturamento,
         imageAlt: "Etapa de faturamento com a leitura dos extratos gerada por IA",
         caption: "A leitura dos extratos feita pela IA, agora dentro do fluxo",
-        layout: "imageRight",
+        layout: "imageFull",
         paragraphs: [
           "A leitura dos extratos feita pela IA deixou de ser uma tela à parte. Receitas, despesas, fluxo de caixa semanal e saúde do saldo ficam dentro da análise, com a opção de reprocessar sem sair da ordem.",
         ],
