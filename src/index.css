@@ -165,9 +165,9 @@
 
   /* ---------- PROJECTS ---------- */
   .projects-head{ align-items: flex-end; margin-bottom: 46px; }
-  .projects-head .section-title.big{ font-size: clamp(2.6rem, 6.5vw, 4.4rem); font-weight: 600; letter-spacing: -0.025em; line-height: 0.92; }
+  .projects-head .section-title.big{ font-size: clamp(2.6rem, 6.5vw, 4.4rem); font-weight: 600; letter-spacing: -0.025em; line-height: 1.1; text-wrap: balance; }
   .projects-head .dot-accent{ color: var(--accent); }
-  .projects-head .section-num{ display:block; margin-top: 12px; }
+  .projects-head .section-num{ display:block; margin-top: 20px; }
   .projects-intro{ font-family:'IBM Plex Mono', monospace; font-size: 0.82rem; line-height: 1.85; color: var(--muted); text-align: right; margin: 0; }
   @media (max-width: 640px){ .projects-head{ align-items: flex-start; } .projects-intro{ text-align: left; margin-top: 6px; } }
 
