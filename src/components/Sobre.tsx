@@ -20,30 +20,30 @@ export default function Sobre() {
 
         <div className="sobre-grid">
           <Reveal className="sobre-text">
+            <p className="bio bio-lead">Design, product and technology working together.</p>
             <p className="bio">
-              Tenho experiência em produtos digitais e atuação <strong>design-led</strong> para criar
-              experiências claras, escaláveis e orientadas a resultados.
+              Sou <strong>Senior Product Designer</strong> expandindo minha atuação para{" "}
+              <strong>Design Engineering</strong>, com uma trajetória construída na criação e
+              evolução de produtos digitais.
             </p>
             <p className="bio">
-              Atuo em squads multidisciplinares conduzindo o ciclo completo de produto do ponto de
-              vista de Design: descoberta e definição do problema, pesquisa, mapeamento de jornadas,
-              ideação, prototipação, testes de usabilidade e handoff para desenvolvimento,
-              garantindo consistência e qualidade na entrega.
+              Minha base está em UX e Product Design: discovery, pesquisa, arquitetura da
+              informação, definição de jornadas e fluxos, prototipação, UI, testes de usabilidade e
+              Design Systems.
             </p>
             <p className="bio">
-              Tenho forte atuação em <strong>UX/UI e Design Systems</strong>, promovendo padrões,
-              acessibilidade e evolução contínua da experiência. Trabalho com visão de produto,
-              equilibrando necessidades do negócio, restrições técnicas e expectativas do usuário,
-              sempre com foco em impacto real.
+              Nos últimos anos, comecei a aproximar ainda mais Design e Engenharia, incorporando{" "}
+              <strong>Inteligência Artificial</strong> ao meu processo de trabalho.
             </p>
             <p className="bio">
-              Sou orientada a <strong>dados e experimentação</strong>, utilizando ferramentas como
-              Hotjar, Google Analytics e testes A/B para gerar insights acionáveis, validar
-              hipóteses e apoiar decisões de design com evidências.
+              Hoje utilizo ferramentas como Claude e ChatGPT não apenas para apoiar pesquisa ou
+              ideação, mas também para transformar decisões de design em protótipos e produtos
+              funcionais, permitindo testar, iterar e evoluir experiências com muito mais
+              velocidade.
             </p>
             <p className="bio">
-              Formada em Gestão de Produtos, com pós-graduação em UX Research, e trajetória
-              consolidada em ambientes ágeis e times de produto.
+              Meu objetivo é reduzir a distância entre o que é pensado no design e o que realmente
+              chega às mãos do usuário.
             </p>
             <div className="tag-cloud">
               {tags.map((t) => (
