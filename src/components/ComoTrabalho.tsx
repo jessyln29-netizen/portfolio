@@ -2,19 +2,29 @@ import Reveal from "./Reveal";
 
 const steps = [
   {
-    num: "01 · Descoberta & Priorização",
-    title: "Entender antes de desenhar",
-    desc: "Discovery com o time de negócio, hipóteses, e priorização de backlog por valor, antes de abrir o Figma.",
+    num: "01",
+    title: "Understand",
+    desc: "Compreendo usuários, negócio, contexto e o problema que realmente precisa ser resolvido.",
   },
   {
-    num: "02 · Design & Validação",
-    title: "Prototipar e testar cedo",
-    desc: "Wireframes, protótipos navegáveis e testes de usabilidade, com o Design System como guia de consistência.",
+    num: "02",
+    title: "Explore",
+    desc: "Pesquisa, benchmark, jornadas, hipóteses, fluxos e exploração de diferentes caminhos para a solução.",
   },
   {
-    num: "03 · Entrega & Acompanhamento",
-    title: "Especificar e acompanhar",
-    desc: "Handoff documentado, critérios de aceite claros, e acompanhamento de métricas pós-entrega (Hotjar, GA).",
+    num: "03",
+    title: "Design",
+    desc: "Arquitetura, interface, interação, Design System e prototipação da experiência.",
+  },
+  {
+    num: "04",
+    title: "Build with AI",
+    desc: "Utilizo ferramentas de IA para transformar conceitos e interfaces em experiências funcionais e explorar rapidamente alternativas de implementação.",
+  },
+  {
+    num: "05",
+    title: "Test & Iterate",
+    desc: "Avalio o comportamento da solução, identifico problemas e refino a experiência a partir dos aprendizados.",
   },
 ];
 
