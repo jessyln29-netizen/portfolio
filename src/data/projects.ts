@@ -29,6 +29,8 @@ import enDesafios from "../assets/en-desafios.webp";
 import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
 import ezCover from "../assets/ez-cover.webp";
+import ezAntes1 from "../assets/ez-antes1.webp";
+import ezAntes2 from "../assets/ez-antes2.webp";
 import ezLista from "../assets/ez-lista.webp";
 import ezDetalhe from "../assets/ez-detalhe.webp";
 import ezVendas from "../assets/ez-vendas.webp";
@@ -375,6 +377,28 @@ export const aiProjects: Project[] = [
         paragraphs: [
           "O Ezcall é o programa interno da EzPag que grava e transcreve toda conversa entre o time e o cliente, amarrada ao pedido e ao atendente. Era um repositório completo e, ao mesmo tempo, mudo: o que o cliente dizia todos os dias não virava informação para ninguém.",
           "O pedido era evoluir o Ezcall usando IA para analisar as ligações: medir o desempenho de cada atendimento e de cada vendedor, captar reclamações e dificuldades do cliente, e descobrir o que mais estava escondido ali.",
+        ],
+      },
+      {
+        kicker: "Antes",
+        title: "Uma lista de chamadas sem leitura nenhuma",
+        image: ezAntes1,
+        imageAlt: "Tela antiga do Ezcall: tabela de chamadas com ID, horários, duração, origem, telefone, cliente e pedido",
+        caption: "A tela original: mais de 18 mil chamadas registradas, identificadas só por horário, duração e pedido. Dados de clientes ocultados.",
+        layout: "imageFull",
+        paragraphs: [
+          "A tela original listava cada chamada com horário, duração, origem, cliente e pedido. Dava para saber que a ligação aconteceu, mas não o que foi dito, como terminou ou se havia algum problema.",
+        ],
+      },
+      {
+        kicker: "Antes",
+        title: "Abrir uma ligação era ler um bloco de texto",
+        image: ezAntes2,
+        imageAlt: "Tela antiga de detalhe da chamada: metadados técnicos, player de áudio e transcrição em texto corrido",
+        caption: "Metadados técnicos, o áudio e a transcrição em texto corrido, sem separar quem fala. Dados pessoais ocultados.",
+        layout: "imageFull",
+        paragraphs: [
+          "No detalhe, a transcrição aparecia em um único bloco, sem separar cliente e atendente, sem resumo, sem desfecho e sem nenhum indicador. Para entender uma ligação, alguém precisava ouvir ou ler tudo, e com milhares de ligações isso não acontecia.",
         ],
       },
       {
