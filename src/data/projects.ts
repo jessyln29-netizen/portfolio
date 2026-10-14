@@ -29,6 +29,24 @@ import enDesafios from "../assets/en-desafios.webp";
 import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
 import ezCover from "../assets/ez-cover.webp";
+import afCover from "../assets/af-cover.webp";
+import afCta from "../assets/af-cta.webp";
+import afAntesAnalise from "../assets/af-antes-analise.webp";
+import afAntesLista from "../assets/af-antes-lista.webp";
+import afAntesExtratos from "../assets/af-antes-extratos.webp";
+import afWsObjetivo from "../assets/af-ws-objetivo.webp";
+import afWsQuadro from "../assets/af-ws-quadro.webp";
+import afWsFluxo from "../assets/af-ws-fluxo.webp";
+import afSlide01 from "../assets/af-slide01.webp";
+import afSlide02 from "../assets/af-slide02.webp";
+import afSlide09 from "../assets/af-slide09.webp";
+import afSlide12 from "../assets/af-slide12.webp";
+import afNovoFila from "../assets/af-novo-fila.webp";
+import afNovoDados from "../assets/af-novo-dados.webp";
+import afNovoDocs from "../assets/af-novo-docs.webp";
+import afNovoEndereco from "../assets/af-novo-endereco.webp";
+import afNovoFaturamento from "../assets/af-novo-faturamento.webp";
+import afNovoConclusao from "../assets/af-novo-conclusao.webp";
 import ezCta from "../assets/ez-cta.webp";
 import ezAntes1 from "../assets/ez-antes1.webp";
 import ezAntes2 from "../assets/ez-antes2.webp";
@@ -524,6 +542,237 @@ export const aiProjects: Project[] = [
       { id: 6, title: "Desempenho de cobrança", description: "Bloqueio, desbloqueio e falhas de sincronização", imageSrc: ezCobranca },
       { id: 7, title: "A apresentação", description: "O que as ligações estão dizendo", imageSrc: ezSlide01 },
       { id: 8, title: "Fechamento", description: "A resposta já está gravada. Falta perguntar.", imageSrc: ezSlide15 },
+    ],
+  },
+  {
+    id: "antifraude",
+    name: "Antifraude",
+    tag: "Discovery · IA aplicada",
+    cover: afCover,
+    coverAlt: "Capa do Antifraude: da tela espalhada à decisão guiada, com o informe de risco e a etapa de conclusão",
+    kicker: "Remodelação do fluxo de análise · EzPag · 2026",
+    cardDesc:
+      "Do discovery com o time de análise a um fluxo guiado em 5 etapas, com o risco sempre à vista.",
+    summary:
+      "Cada ordem da EzPag passa por uma análise de antifraude antes da aprovação, e a informação estava espalhada por várias telas. Conduzi o discovery com o time de análise, usei IA para sintetizar os workshops e transformei o resultado em um fluxo guiado: 5 etapas, um informe de risco sempre visível e uma decisão que só sai justificada.",
+    meta: [
+      { label: "Meu papel", value: "PO & Product Designer: discovery, facilitação, UX/UI e protótipo" },
+      { label: "Tipo", value: "Produto interno · Back-office de análise de risco" },
+      { label: "IA no processo", value: "Claude: síntese dos workshops, documento de ação e protótipo funcional" },
+      { label: "Ano", value: "2026" },
+    ],
+    heroImage: afNovoDados,
+    heroImageAlt:
+      "Nova análise de antifraude: etapas no topo, dados iniciais do pedido e o informe de risco fixo na lateral",
+    sections: [
+      {
+        kicker: "Contexto",
+        title: "Uma decisão montada de cabeça",
+        image: afAntesAnalise,
+        imageAlt: "Tela antiga de análise: uma coluna longa com dezenas de blocos de informação",
+        caption: "A tela antiga de análise, com dados desfocados: tudo em uma coluna longa, sem um caminho até a decisão",
+        layout: "imageLeft",
+        paragraphs: [
+          "A EzPag financia aparelhos em parcelas, e cada ordem passa por uma análise de antifraude antes de ser aprovada. O analista precisa cruzar documentos, extratos, endereço, histórico de pagamentos e alertas do sistema.",
+          "Na tela antiga, essas informações estavam soltas em uma coluna longa e em ferramentas separadas. O analista trocava de tela, reprocessava integrações e interpretava alertas sem contexto. A decisão existia, mas o caminho até ela ficava na cabeça de cada um.",
+        ],
+      },
+      {
+        kicker: "Antes",
+        title: "Uma fila sem tempo nem responsável",
+        image: afAntesLista,
+        imageAlt: "Fila antiga de antifraude com filtros e tabela de pedidos, dados de clientes desfocados",
+        caption: "A fila original. Dados de clientes desfocados.",
+        layout: "imageFull",
+        paragraphs: [
+          "A fila mostrava status e valores, mas não há quanto tempo a ordem esperava, quem estava analisando nem o tipo de frete. Duas pessoas podiam abrir a mesma ordem, e o que era urgente não se destacava.",
+        ],
+      },
+      {
+        kicker: "Antes",
+        title: "A leitura dos extratos vivia em outra tela",
+        image: afAntesExtratos,
+        imageAlt: "Tela antiga de leitura dos extratos bancários, com dados pessoais desfocados",
+        caption: "A análise de extratos já existia, separada do restante da análise. Dados pessoais desfocados.",
+        layout: "imageFull",
+        paragraphs: [
+          "A leitura financeira dos extratos já era feita com apoio de IA, mas ficava separada. Para chegar a uma conclusão, o analista juntava em memória o que via aqui com o que via na tela principal.",
+        ],
+      },
+      {
+        kicker: "Discovery",
+        title: "Dois workshops com quem analisa todos os dias",
+        image: afWsObjetivo,
+        imageAlt: "Quadro do workshop com o objetivo e o resultado esperado",
+        caption: "Objetivo e resultado esperado, combinados com o time antes de começar",
+        layout: "imageRight",
+        paragraphs: [
+          "Facilitei duas sessões presenciais com o time de antifraude, produto e tecnologia, oito pessoas no total. O objetivo era entender o que funciona, o que trava, que informação precisa aparecer primeiro e quais melhorias ajudariam de verdade.",
+          "Cada quadro foi preenchido individualmente e só depois discutido em grupo, para capturar a visão de cada analista sem que a opinião mais forte puxasse as outras. No fim, todos votaram nos pontos mais críticos.",
+        ],
+      },
+      {
+        kicker: "Discovery",
+        title: "Dores, ideias e votos",
+        image: afWsQuadro,
+        imageAlt: "Quadro do FigJam com as dores do fluxo atual e a geração de ideias, com bolinhas de votação",
+        caption: "Onde se perde tempo, o que gera retrabalho, que informação chega tarde e quais alertas confundem. As bolinhas são os votos.",
+        layout: "imageFull",
+      },
+      {
+        kicker: "Discovery",
+        title: "Cada analista desenhou o seu fluxo ideal",
+        image: afWsFluxo,
+        imageAlt: "Quadro com os fluxos ideais desenhados por cada participante",
+        caption: "Seis propostas de fluxo, uma por participante. Nomes ocultados.",
+        layout: "imageFull",
+        paragraphs: [
+          "Em vez de eu propor a jornada, pedi que cada pessoa desenhasse a sua. As seis propostas tinham ordens diferentes, mas os mesmos pontos de atenção apareciam em quase todas, e foi isso que guiou o novo fluxo.",
+        ],
+      },
+      {
+        kicker: "Como a IA entrou",
+        title: "Da transcrição ao documento de ação",
+        image: afSlide02,
+        imageAlt: "Slide de síntese executiva: organizar, integrar e automatizar",
+        layout: "imageFull",
+        paragraphs: [
+          "Os dois workshops foram transcritos. Usei o Claude para cruzar as transcrições com os quadros e as votações e montar o documento de ação: dores principais, etapas que precisavam mudar, a ordem ideal das informações, as funcionalidades pedidas e um desenho inicial da nova jornada.",
+          "A IA acelerou a leitura e a organização. A facilitação, a priorização e a validação de cada ponto com o time foram minhas, e o documento só circulou depois que conferi cada achado contra o que foi dito nas sessões.",
+        ],
+        bullets: [
+          "Organizar: agrupar a informação por tema e trazer o essencial para o topo.",
+          "Integrar: trazer para dentro da análise o que hoje exige trocar de ferramenta.",
+          "Automatizar: deixar padrões claros para o sistema e apoiar o parecer com IA.",
+        ],
+      },
+      {
+        kicker: "Nova experiência",
+        title: "A ordem em que a informação aparece",
+        image: afSlide09,
+        imageAlt: "Slide: ordem ideal de apresentação das informações e princípios de agrupamento",
+        layout: "imageFull",
+        paragraphs: [
+          "O time foi claro: identificação, endereço e documentos precisam estar no topo, os alertas precisam vir juntos e com contexto, e o analista não deveria rolar a tela para achar o básico.",
+        ],
+      },
+      {
+        kicker: "Novo fluxo",
+        title: "Seis propostas, uma jornada",
+        image: afSlide12,
+        imageAlt: "Slide: desenho inicial da jornada do analista, da pré-análise ao pós-decisão",
+        layout: "imageFull",
+        paragraphs: [
+          "Consolidei os fluxos individuais em uma jornada só: fila priorizada, abertura com o essencial, alertas consolidados, análise por blocos, validações integradas, parecer assistido e pós-decisão. Clientes recorrentes reaproveitam o que já foi validado.",
+        ],
+      },
+      {
+        kicker: "O protótipo",
+        title: "A fila que mostra o que importa",
+        image: afNovoFila,
+        imageAlt: "Nova fila de antifraude com analista, frete e SLA de cada ordem",
+        caption: "Analista responsável, frete e SLA visíveis em cada linha",
+        layout: "imageFull",
+        paragraphs: [
+          "Construí o protótipo funcional com apoio de IA sobre o EzUI v2, o design system da EzPag. A fila passou a mostrar quem está com cada ordem, o tipo de frete e há quanto tempo ela espera, com cor de alerta conforme o prazo aperta.",
+        ],
+      },
+      {
+        kicker: "Etapa 1 · Dados iniciais",
+        title: "O informe de risco nunca sai da tela",
+        image: afNovoDados,
+        imageAlt: "Etapa de dados iniciais com o informe de risco fixo na lateral",
+        caption: "Etapas no topo e o informe de risco fixo na lateral, em todas as etapas",
+        layout: "imageLeft",
+        paragraphs: [
+          "A análise foi dividida em etapas navegáveis: dados iniciais, documentação, endereço, faturamento, histórico e conclusão. Do lado, um painel fixo resume o risco da ordem, as pendências que o analista sinalizou e os alertas do sistema, cada um com o seu porquê.",
+          "Na primeira etapa ficam os dados do cliente, da ordem e do contrato, e as outras ordens em blocos que abrem só quando o analista precisa.",
+        ],
+      },
+      {
+        kicker: "Etapa 2 · Documentação",
+        title: "Documentos com histórico, não sobrescritos",
+        image: afNovoDocs,
+        imageAlt: "Etapa de documentação com documentos, extratos, análise facial, comparações e histórico de documentos",
+        caption: "Documentos fictícios. Cada grupo pode ser sinalizado ou reenviado ao cliente.",
+        layout: "imageRight",
+        paragraphs: [
+          "O histórico documental foi o pedido mais votado do workshop. Agora as versões anteriores ficam guardadas por ordem, em vez de o arquivo novo apagar o antigo.",
+          "Cada grupo de documentos tem duas ações: sinalizar um problema ou copiar o link para o cliente reenviar. As comparações automáticas aparecem em uma lista que diz o que conferiu e o que pede atenção.",
+        ],
+      },
+      {
+        kicker: "Etapa 3 · Endereço",
+        title: "Endereço, mapa e vínculos em um lugar",
+        image: afNovoEndereco,
+        imageAlt: "Etapa de endereço com mapa de cluster, risco por CEP, teia de grupo familiar e fingerprint",
+        caption: "Tudo sobre endereço junto, como o time pediu",
+        layout: "imageLeft",
+        paragraphs: [
+          "Antes, o mapa aparecia só no fim da tela e a validação de endereço exigia outra ferramenta. Agora a etapa reúne o endereço atual, o mapa de clusters, o risco por CEP e uma teia interativa de grupo familiar, em que o analista explora conexões e vincula ou desvincula ordens.",
+        ],
+      },
+      {
+        kicker: "Etapa 4 · Faturamento",
+        title: "A leitura financeira dentro da análise",
+        image: afNovoFaturamento,
+        imageAlt: "Etapa de faturamento com a leitura dos extratos gerada por IA",
+        caption: "A leitura dos extratos feita pela IA, agora dentro do fluxo",
+        layout: "imageRight",
+        paragraphs: [
+          "A leitura dos extratos feita pela IA deixou de ser uma tela à parte. Receitas, despesas, fluxo de caixa semanal e saúde do saldo ficam dentro da análise, com a opção de reprocessar sem sair da ordem.",
+        ],
+      },
+      {
+        kicker: "Etapa 5 · Conclusão",
+        title: "Uma decisão que só sai justificada",
+        image: afNovoConclusao,
+        imageAlt: "Etapa de conclusão com checklist, pendências com o time de vendas e a decisão guiada em três passos",
+        caption: "Checklist, pendências entre times e a decisão guiada em três passos",
+        layout: "imageFull",
+        paragraphs: [
+          "A conclusão virou um fluxo guiado em três passos: escolher a decisão, justificar com motivos agrupados por categoria e detalhar. O botão principal muda de texto conforme a decisão e só fica ativo quando a justificativa está completa.",
+          "Quando a ordem fica pendente, o sistema cria um card que vai para o time de vendas. O analista revisa a resolução e aceita ou reabre, e a ordem só pode ser aprovada com todas as pendências concluídas.",
+        ],
+      },
+      {
+        kicker: "Decisões de design",
+        title: "Os princípios por trás das telas",
+        bullets: [
+          "Cada tela termina em uma ação clara, e ações definitivas só ficam disponíveis quando os pré-requisitos estão cumpridos.",
+          "Muita informação, com respiro: cards de título curto e blocos que abrem só quando o analista precisa.",
+          "Análise, Blocklist e Chargeback seguem a mesma navegação, os mesmos padrões de tabela, filtro e card e o mesmo vocabulário de status.",
+          "Fidelidade ao design system: componentes, cores, tipografia e raios do EzUI v2, sem estilos inventados.",
+        ],
+      },
+      {
+        kicker: "Desafios",
+        title: "O que foi difícil",
+        bullets: [
+          "Consolidar seis jornadas diferentes em uma só, sem perder o que cada analista considerava indispensável.",
+          "Mostrar muita informação sem voltar ao problema original de uma tela que ninguém consegue ler.",
+          "Revisar cerca de 21 funcionalidades existentes e garantir que nenhuma se perdesse na nova estrutura.",
+          "Tratar um tema sensível em público: nomes, documentos, endereços e critérios de decisão foram substituídos ou ocultados neste case e no protótipo.",
+        ],
+      },
+    ],
+    appCta: {
+      image: afCta,
+      url: "/prototipos/antifraude/",
+      alt: "Teste o protótipo do Antifraude: a análise em 5 etapas, com o informe de risco sempre à vista",
+      accent: "#39DDA2",
+      accentText: "#0F241A",
+      label: "Testar o protótipo",
+    },
+    galleryTitle: "O protótipo, etapa a etapa",
+    gallery: [
+      { id: 1, title: "Fila de análise", description: "Analista, frete e SLA em cada ordem", imageSrc: afNovoFila },
+      { id: 2, title: "Dados iniciais", description: "Cliente, ordem, contrato e o informe de risco", imageSrc: afNovoDados },
+      { id: 3, title: "Documentação", description: "Documentos, extratos e histórico documental", imageSrc: afNovoDocs },
+      { id: 4, title: "Endereço", description: "Mapa de cluster, risco por CEP e grupo familiar", imageSrc: afNovoEndereco },
+      { id: 5, title: "Faturamento", description: "Leitura financeira gerada pela IA", imageSrc: afNovoFaturamento },
+      { id: 6, title: "Conclusão", description: "Checklist, pendências e decisão guiada", imageSrc: afNovoConclusao },
+      { id: 7, title: "Documento de ação", description: "O resultado do discovery", imageSrc: afSlide01 },
     ],
   },
 ];
