@@ -30,6 +30,8 @@ import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
 import ezCover from "../assets/ez-cover.webp";
 import afCover from "../assets/af-cover.webp";
+import afFigma from "../assets/af-figma.webp";
+import afFigmaDados from "../assets/af-figma-dados.webp";
 import afCta from "../assets/af-cta.webp";
 import afAntesAnalise from "../assets/af-antes-analise.webp";
 import afAntesLista from "../assets/af-antes-lista.webp";
@@ -667,6 +669,29 @@ export const aiProjects: Project[] = [
         ],
       },
       {
+        kicker: "Primeira versão · Figma",
+        title: "O fluxo começou no Figma",
+        image: afFigma,
+        imageAlt: "Primeiras telas no Figma: dados iniciais, endereço e histórico do pedido, com o informe de risco na lateral",
+        caption: "Dados iniciais, endereço e histórico do pedido na primeira versão. Dados pessoais e pesos do score ocultados.",
+        layout: "imageFull",
+        paragraphs: [
+          "Com a jornada consolidada, desenhei a primeira versão no Figma. Ela já trazia as decisões principais: as etapas no topo, o informe de risco fixo na lateral e uma linha do tempo com tudo o que aconteceu no pedido.",
+        ],
+      },
+      {
+        kicker: "Primeira versão · Figma",
+        title: "O que mudou do Figma para o protótipo",
+        image: afFigmaDados,
+        imageAlt: "Etapa de dados iniciais na primeira versão do Figma",
+        caption: "Dados iniciais na versão do Figma",
+        layout: "imageLeft",
+        paragraphs: [
+          "A versão do Figma validou a estrutura com o time. No protótipo funcional, levei o fluxo para o EzUI v2 em fundo claro, dei mais respiro aos blocos e transformei a etapa de encerramento em uma decisão guiada, com checklist e pendências entre times.",
+          "O histórico do pedido continuou como etapa própria, e os alertas do sistema ganharam uma explicação de uma linha cada.",
+        ],
+      },
+      {
         kicker: "O protótipo",
         title: "A fila que mostra o que importa",
         image: afNovoFila,
@@ -674,7 +699,7 @@ export const aiProjects: Project[] = [
         caption: "Analista responsável, frete e SLA visíveis em cada linha",
         layout: "imageFull",
         paragraphs: [
-          "Construí o protótipo funcional com apoio de IA sobre o EzUI v2, o design system da EzPag. A fila passou a mostrar quem está com cada ordem, o tipo de frete e há quanto tempo ela espera, com cor de alerta conforme o prazo aperta.",
+          "A partir do Figma, construí o protótipo funcional com apoio de IA sobre o EzUI v2, o design system da EzPag. A fila passou a mostrar quem está com cada ordem, o tipo de frete e há quanto tempo ela espera, com cor de alerta conforme o prazo aperta.",
         ],
       },
       {
@@ -772,7 +797,8 @@ export const aiProjects: Project[] = [
       { id: 4, title: "Endereço", description: "Mapa de cluster, risco por CEP e grupo familiar", imageSrc: afNovoEndereco },
       { id: 5, title: "Faturamento", description: "Leitura financeira gerada pela IA", imageSrc: afNovoFaturamento },
       { id: 6, title: "Conclusão", description: "Checklist, pendências e decisão guiada", imageSrc: afNovoConclusao },
-      { id: 7, title: "Documento de ação", description: "O resultado do discovery", imageSrc: afSlide01 },
+      { id: 7, title: "Primeira versão no Figma", description: "Dados iniciais, endereço e histórico", imageSrc: afFigma },
+      { id: 8, title: "Documento de ação", description: "O resultado do discovery", imageSrc: afSlide01 },
     ],
   },
 ];
