@@ -79,7 +79,7 @@ export type Project = {
   gallery?: { id: number; title: string; description: string; imageSrc: string }[];
   galleryTitle?: string;
   galleryVariant?: "landscape" | "poster";
-  designSystem?: "orizon" | "raceon" | "envia";
+  designSystem?: "orizon" | "raceon" | "envia" | "ezui";
   appCta?: { image: string; url: string; alt: string; accent?: string; accentText?: string; label?: string };
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
@@ -505,6 +505,7 @@ export const aiProjects: Project[] = [
         ],
       },
     ],
+    designSystem: "ezui",
     appCta: {
       image: ezCta,
       url: "/prototipos/ezcall/",

@@ -4,6 +4,7 @@ import { getProject, projects, aiProjects, type CaseSection } from "../data/proj
 import Reveal from "../components/Reveal";
 import DesignSystemShowcase from "../components/DesignSystemShowcase";
 import RaceOnStyleGuide from "../components/RaceOnStyleGuide";
+import EzuiStyleGuide from "../components/EzuiStyleGuide";
 import EnviaStyleGuide from "../components/EnviaStyleGuide";
 import CreationStages from "../components/CreationStages";
 import AppCta from "../components/AppCta";
@@ -164,6 +165,7 @@ export default function ProjectDetail() {
       {project.designSystem === "orizon" && <DesignSystemShowcase />}
       {project.designSystem === "raceon" && <RaceOnStyleGuide />}
       {project.designSystem === "envia" && <EnviaStyleGuide />}
+      {project.designSystem === "ezui" && <EzuiStyleGuide />}
       {project.appCta && <AppCta {...project.appCta} />}
 
       <div className="pd-nav-next">
