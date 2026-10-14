@@ -29,6 +29,7 @@ import enDesafios from "../assets/en-desafios.webp";
 import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
 import ezCover from "../assets/ez-cover.webp";
+import ezCta from "../assets/ez-cta.webp";
 import ezAntes1 from "../assets/ez-antes1.webp";
 import ezAntes2 from "../assets/ez-antes2.webp";
 import ezLista from "../assets/ez-lista.webp";
@@ -79,7 +80,7 @@ export type Project = {
   galleryTitle?: string;
   galleryVariant?: "landscape" | "poster";
   designSystem?: "orizon" | "raceon" | "envia";
-  appCta?: { image: string; url: string; alt: string; accent?: string; accentText?: string };
+  appCta?: { image: string; url: string; alt: string; accent?: string; accentText?: string; label?: string };
   // caso simples (Envia+, Coin Run)
   screenCaption?: string;
   blocks?: ProjectBlock[];
@@ -351,7 +352,7 @@ export const aiProjects: Project[] = [
     name: "Ezcall",
     tag: "IA aplicada · Produto interno",
     cover: ezCover,
-    coverAlt: "Tela de ligações do Ezcall: lista de atendimentos transcritos e resumidos, com resultado e atendente",
+    coverAlt: "Capa do Ezcall: cada ligação vira informação, com telas do produto e um resumo gerado por IA",
     kicker: "Inteligência de atendimento com IA · EzPag · 2026",
     cardDesc:
       "De repositório de gravações a uma camada de análise com IA para vendas, cobrança e produto.",
@@ -504,6 +505,14 @@ export const aiProjects: Project[] = [
         ],
       },
     ],
+    appCta: {
+      image: ezCta,
+      url: "/prototipos/ezcall/",
+      alt: "Teste o protótipo do Ezcall: ligações transcritas, resumidas e medidas",
+      accent: "#6691FF",
+      accentText: "#ffffff",
+      label: "Testar o protótipo",
+    },
     galleryTitle: "O produto, tela a tela",
     gallery: [
       { id: 1, title: "Ligações", description: "Todas as ligações transcritas, resumidas e com desfecho", imageSrc: ezLista },
