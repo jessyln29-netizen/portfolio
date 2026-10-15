@@ -20,7 +20,7 @@ export default function Sobre() {
 
         <div className="sobre-grid">
           <Reveal className="sobre-text">
-            <p className="bio bio-lead">Design, product and technology working together.</p>
+            <p className="bio bio-lead">Design, produto e tecnologia trabalhando juntos.</p>
             <p className="bio">
               Sou <strong>Senior Product Designer</strong> expandindo minha atuação para{" "}
               <strong>Design Engineering</strong>, com uma trajetória construída na criação e
