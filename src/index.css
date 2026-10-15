@@ -690,3 +690,16 @@ a.reset{ color: inherit; text-decoration: none; }
 
 .pd-head .pd-summary + .pd-summary{ margin-top: 14px; }
 .pd-meta-row > div{ white-space: pre-line; }
+
+/* Comparação lado a lado e frase de fechamento (cases) */
+.cs-compare{ display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px; }
+@media (max-width: 720px){ .cs-compare{ grid-template-columns: 1fr; } }
+.cs-compare-col{ border:1px solid var(--line); border-radius: 16px; padding: 22px 24px; background: var(--white); }
+.cs-compare-no{ background: var(--paper-deep); }
+.cs-compare-title{ font-family:'Poppins', sans-serif; font-weight:600; font-size: 1rem; margin: 0 0 14px; color: var(--ink); }
+.cs-compare-col ul{ list-style:none; margin:0; padding:0; display:grid; gap: 10px; }
+.cs-compare-col li{ position:relative; padding-left: 30px; color: var(--ink-soft); font-size: .98rem; line-height:1.45; }
+.cs-compare-col li::before{ position:absolute; left:0; top:1px; width:20px; height:20px; border-radius:50%; display:grid; place-items:center; font-size:.72rem; font-weight:700; }
+.cs-compare-yes li::before{ content:"✓"; background:#E6FBF3; color:#0A8F5F; }
+.cs-compare-no li::before{ content:"?"; background:#FFEBEF; color:#B31935; }
+.cs-quote{ margin: 26px 0 0; padding-left: 18px; border-left: 3px solid var(--accent); font-family:'Poppins', sans-serif; font-weight:600; font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height:1.35; color: var(--ink); max-width: 720px; }

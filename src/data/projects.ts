@@ -91,6 +91,10 @@ export type CaseSection = {
   imageAlt?: string;
   caption?: string;
   layout?: "text" | "imageRight" | "imageLeft" | "imageFull";
+  /** Comparação lado a lado (ex.: o que respondia × o que não respondia). */
+  compare?: { title: string; items: string[]; tone?: "yes" | "no" }[];
+  /** Frase de fechamento em destaque. */
+  quote?: string;
 };
 
 export type Project = {
@@ -420,14 +424,35 @@ export const aiProjects: Project[] = [
       },
       {
         kicker: "Antes",
-        title: "Uma lista de chamadas sem leitura nenhuma",
+        title: "Uma lista de chamadas sem contexto",
         image: ezAntes1,
         imageAlt: "Tela antiga do EzCall: tabela de chamadas com ID, horários, duração, origem, telefone, cliente e pedido",
         caption: "A tela original: mais de 18 mil chamadas registradas, identificadas só por horário, duração e pedido. Dados de clientes ocultados.",
         layout: "imageFull",
-        paragraphs: [
-          "A tela original listava cada chamada com horário, duração, origem, cliente e pedido. Dava para saber que a ligação aconteceu, mas não o que foi dito, como terminou ou se havia algum problema.",
+        compare: [
+          {
+            title: "A experiência anterior conseguia responder",
+            tone: "yes",
+            items: [
+              "Quem ligou?",
+              "Quando?",
+              "Quanto tempo durou?",
+              "Qual cliente e pedido estavam relacionados?",
+            ],
+          },
+          {
+            title: "Mas não conseguia responder",
+            tone: "no",
+            items: [
+              "O que aconteceu durante a ligação?",
+              "Qual foi o problema?",
+              "Onde o cliente travou?",
+              "Como o atendente conduziu a conversa?",
+              "O problema era da pessoa, do processo ou do produto?",
+            ],
+          },
         ],
+        quote: "O sistema armazenava informação, mas não produzia conhecimento.",
       },
       {
         kicker: "Antes",
@@ -437,7 +462,7 @@ export const aiProjects: Project[] = [
         caption: "Metadados técnicos, o áudio e a transcrição em texto corrido, sem separar quem fala. Dados pessoais ocultados.",
         layout: "imageFull",
         paragraphs: [
-          "No detalhe, a transcrição aparecia em um único bloco, sem separar cliente e atendente, sem resumo, sem desfecho e sem nenhum indicador. Para entender uma ligação, alguém precisava ouvir ou ler tudo, e com milhares de ligações isso não acontecia.",
+          "Abrir uma ligação significava encontrar praticamente um bloco de texto: a transcrição em um trecho único, sem separar cliente e atendente, sem resumo, sem desfecho e sem nenhum indicador. Para entender uma ligação, alguém precisava ouvir ou ler tudo, e com milhares de ligações isso não acontecia.",
         ],
       },
       {

@@ -41,6 +41,21 @@ function CaseSectionBlock({ s }: { s: CaseSection }) {
             ))}
           </ul>
         )}
+        {s.compare && (
+          <div className="cs-compare">
+            {s.compare.map((c, i) => (
+              <div key={i} className={`cs-compare-col cs-compare-${c.tone ?? "yes"}`}>
+                <p className="cs-compare-title">{c.title}</p>
+                <ul>
+                  {c.items.map((it, j) => (
+                    <li key={j}>{it}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+        {s.quote && <p className="cs-quote">{s.quote}</p>}
       </div>
       {hasImg && (
         <figure className="cs-figure">
