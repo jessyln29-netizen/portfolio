@@ -380,24 +380,31 @@ export const projects: Project[] = [
 export const aiProjects: Project[] = [
   {
     id: "ezcall",
-    name: "Ezcall",
+    name: "EzCall",
     tag: "IA aplicada · Produto interno",
     cover: ezCover,
-    coverAlt: "Capa do Ezcall: cada ligação vira informação, com telas do produto e um resumo gerado por IA",
-    kicker: "Inteligência de atendimento com IA · EzPag · 2026",
+    coverAlt: "Capa do EzCall: cada ligação vira informação, com telas do produto e um resumo gerado por IA",
+    kicker: "Transformando milhares de conversas em decisões de produto.",
     cardDesc:
       "De repositório de gravações a uma camada de análise com IA para vendas, cobrança e produto.",
-    summary:
-      "O Ezcall gravava e transcrevia todas as ligações de vendas e cobrança, mas ninguém lia esse material. Usei IA para analisar 98 transcrições, encontrar onde o cliente realmente trava e transformar esse diagnóstico em produto: um pipeline de análise e as telas de desempenho, produto e operação.",
+    summary: "O EzCall grava e transcreve todas as ligações de vendas e cobrança da EzPag. O problema era que esse enorme volume de informação existia, mas praticamente não era utilizado.\n\nAnalisei 98 transcrições reais com apoio de IA, identifiquei padrões de comportamento, gargalos de produto e problemas operacionais e transformei esse diagnóstico em uma nova experiência para o EzCall: um sistema capaz de transformar conversas em dados estruturados, evidências e decisões acionáveis.",
     meta: [
-      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
-      { label: "Tipo", value: "Produto interno · Inteligência de atendimento" },
-      { label: "IA no processo", value: "Claude: leitura das transcrições, protótipo funcional e apresentação" },
+      {
+        label: "Meu papel",
+        value:
+          "Senior Product Designer / Design Engineer\nProduct Discovery · UX Research · Data Analysis · UX/UI · Design System · Functional Prototyping · AI-Assisted Development",
+      },
+      { label: "Produto", value: "Produto interno · Inteligência de atendimento" },
+      {
+        label: "IA no processo",
+        value:
+          "Claude + ChatGPT\nAnálise de transcrições · classificação de padrões · exploração de soluções · prototipação funcional · apoio à implementação",
+      },
       { label: "Ano", value: "2026" },
     ],
     heroImage: ezDetalhe,
     heroImageAlt:
-      "Detalhe de uma ligação no Ezcall: transcrição separada por falante, resumo, próximos passos e tempo de fala",
+      "Detalhe de uma ligação no EzCall: transcrição separada por falante, resumo, próximos passos e tempo de fala",
     sections: [
       {
         kicker: "Ponto de partida",
@@ -407,15 +414,15 @@ export const aiProjects: Project[] = [
         caption: "A infraestrutura já existia. Faltava a camada que lê o material e devolve decisão.",
         layout: "imageFull",
         paragraphs: [
-          "O Ezcall é o programa interno da EzPag que grava e transcreve toda conversa entre o time e o cliente, amarrada ao pedido e ao atendente. Era um repositório completo e, ao mesmo tempo, mudo: o que o cliente dizia todos os dias não virava informação para ninguém.",
-          "O pedido era evoluir o Ezcall usando IA para analisar as ligações: medir o desempenho de cada atendimento e de cada vendedor, captar reclamações e dificuldades do cliente, e descobrir o que mais estava escondido ali.",
+          "O EzCall é o programa interno da EzPag que grava e transcreve toda conversa entre o time e o cliente, amarrada ao pedido e ao atendente. Era um repositório completo e, ao mesmo tempo, mudo: o que o cliente dizia todos os dias não virava informação para ninguém.",
+          "O pedido era evoluir o EzCall usando IA para analisar as ligações: medir o desempenho de cada atendimento e de cada vendedor, captar reclamações e dificuldades do cliente, e descobrir o que mais estava escondido ali.",
         ],
       },
       {
         kicker: "Antes",
         title: "Uma lista de chamadas sem leitura nenhuma",
         image: ezAntes1,
-        imageAlt: "Tela antiga do Ezcall: tabela de chamadas com ID, horários, duração, origem, telefone, cliente e pedido",
+        imageAlt: "Tela antiga do EzCall: tabela de chamadas com ID, horários, duração, origem, telefone, cliente e pedido",
         caption: "A tela original: mais de 18 mil chamadas registradas, identificadas só por horário, duração e pedido. Dados de clientes ocultados.",
         layout: "imageFull",
         paragraphs: [
@@ -463,7 +470,7 @@ export const aiProjects: Project[] = [
         kicker: "Do diagnóstico ao produto",
         title: "Um pipeline com evidência em cada número",
         image: ezLista,
-        imageAlt: "Lista de ligações do Ezcall com resumo, resultado, atendente, duração e data",
+        imageAlt: "Lista de ligações do EzCall com resumo, resultado, atendente, duração e data",
         caption: "Todas as ligações transcritas e resumidas, com o desfecho de cada uma",
         layout: "imageFull",
         paragraphs: [
@@ -557,7 +564,7 @@ export const aiProjects: Project[] = [
     appCta: {
       image: ezCta,
       url: "/prototipos/ezcall/",
-      alt: "Teste o protótipo do Ezcall: ligações transcritas, resumidas e medidas",
+      alt: "Teste o protótipo do EzCall: ligações transcritas, resumidas e medidas",
       accent: "#6691FF",
       accentText: "#ffffff",
       label: "Abrir protótipo · requer senha",

@@ -95,7 +95,11 @@ export default function ProjectDetail() {
         <div className="pd-head-main">
           <p className="card-kicker">{project.kicker}</p>
           <h1 className="pd-title">{project.name}</h1>
-          <p className="pd-summary">{project.summary}</p>
+          {project.summary.split("\n\n").map((para, i) => (
+            <p className="pd-summary" key={i}>
+              {para}
+            </p>
+          ))}
         </div>
         <div className="pd-meta-row">
           {project.meta.map((m) => (

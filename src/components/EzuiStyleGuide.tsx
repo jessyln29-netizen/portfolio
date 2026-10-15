@@ -71,11 +71,11 @@ export default function EzuiStyleGuide() {
     <div className="en-ds ez-ds">
       <Reveal className="en-head">
         <span className="en-eyebrow">Design System · EZUI v2</span>
-        <h2 className="en-title">O sistema por trás do Ezcall</h2>
+        <h2 className="en-title">O sistema por trás do EzCall</h2>
         <p className="en-lead">
           O protótipo foi construído sobre o EZUI v2, o design system da EzPag: azul como marca,
           cores de feedback para o desfecho de cada ligação e Inter no corpo. Recriei aqui em código
-          os tokens que o Ezcall usa. Cada peça abaixo é HTML/CSS real.
+          os tokens que o EzCall usa. Cada peça abaixo é HTML/CSS real.
         </p>
       </Reveal>
 
@@ -120,7 +120,7 @@ export default function EzuiStyleGuide() {
       <Reveal className="en-block">
         <div className="en-block-head">
           <h3>Componentes</h3>
-          <span>Os mesmos estados do EZUI, aplicados às telas do Ezcall.</span>
+          <span>Os mesmos estados do EZUI, aplicados às telas do EzCall.</span>
         </div>
 
         <p className="en-group-label">Botões · radius 6px</p>

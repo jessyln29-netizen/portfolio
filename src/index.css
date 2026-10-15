@@ -687,3 +687,6 @@ a.reset{ color: inherit; text-decoration: none; }
 .hx-hello .hx-avatar{ width: clamp(68px, 7.5vw, 104px); }
 .hx-title em{ display:block; margin-top: 12px; line-height: 1.12; }
 @media (max-width: 640px){ .hx-hello{ flex-direction: column; gap: 14px; } .hx-hello .hx-avatar{ width: 104px; } }
+
+.pd-head .pd-summary + .pd-summary{ margin-top: 14px; }
+.pd-meta-row > div{ white-space: pre-line; }
