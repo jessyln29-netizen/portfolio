@@ -3,27 +3,27 @@ import Reveal from "./Reveal";
 const steps = [
   {
     num: "01",
-    title: "Understand",
+    title: "Entender",
     desc: "Compreendo usuários, negócio, contexto e o problema que realmente precisa ser resolvido.",
   },
   {
     num: "02",
-    title: "Explore",
+    title: "Explorar",
     desc: "Pesquisa, benchmark, jornadas, hipóteses, fluxos e exploração de diferentes caminhos para a solução.",
   },
   {
     num: "03",
-    title: "Design",
+    title: "Desenhar",
     desc: "Arquitetura, interface, interação, Design System e prototipação da experiência.",
   },
   {
     num: "04",
-    title: "Build with AI",
+    title: "Construir com IA",
     desc: "Utilizo ferramentas de IA para transformar conceitos e interfaces em experiências funcionais e explorar rapidamente alternativas de implementação.",
   },
   {
     num: "05",
-    title: "Test & Iterate",
+    title: "Testar e iterar",
     desc: "Avalio o comportamento da solução, identifico problemas e refino a experiência a partir dos aprendizados.",
   },
 ];
