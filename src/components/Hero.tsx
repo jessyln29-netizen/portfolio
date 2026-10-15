@@ -58,10 +58,11 @@ export default function Hero() {
         </motion.a>
 
         <motion.div className="hx-title-box" {...up(0.15)}>
-          <img className="hx-avatar" src={foto} alt="Retrato de Jéssica Nascimento" />
           <h1 className="hx-title">
-            Olá, eu sou a Jess!
-            <br />
+            <span className="hx-hello">
+              <img className="hx-avatar" src={foto} alt="Retrato de Jéssica Nascimento" />
+              <span>Olá, eu sou a Jess!</span>
+            </span>
             <em>Senior Product Designer &amp;&nbsp;Design&nbsp;Engineer</em>
           </h1>
         </motion.div>
