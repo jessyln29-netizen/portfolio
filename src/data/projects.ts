@@ -29,6 +29,17 @@ import enDesafios from "../assets/en-desafios.webp";
 import enCta from "../assets/en-cta.webp";
 import ozCta from "../assets/oz-cta.webp";
 import ezCover from "../assets/ez-cover.webp";
+import etCover from "../assets/et-cover.webp";
+import etCta from "../assets/et-cta.webp";
+import etDashboard from "../assets/et-dashboard.webp";
+import etFunil from "../assets/et-funil.webp";
+import etAtribuicao from "../assets/et-atribuicao.webp";
+import etLinks from "../assets/et-links.webp";
+import etCampanhas from "../assets/et-campanhas.webp";
+import etParceiros from "../assets/et-parceiros.webp";
+import etLeads from "../assets/et-leads.webp";
+import etMonitor from "../assets/et-monitor.webp";
+import etSemvinculo from "../assets/et-semvinculo.webp";
 import afCover from "../assets/af-cover.webp";
 import afFigma from "../assets/af-figma.webp";
 import afFigmaDados from "../assets/af-figma-dados.webp";
@@ -834,6 +845,162 @@ export const aiProjects: Project[] = [
       { id: 6, title: "Conclusão", description: "Checklist, pendências e decisão guiada", imageSrc: afNovoConclusao },
       { id: 7, title: "Primeira versão no Figma", description: "Dados iniciais, endereço e histórico", imageSrc: afFigma },
       { id: 8, title: "Documento de ação", description: "O resultado do discovery", imageSrc: afSlide01 },
+    ],
+  },
+  {
+    id: "eztracker",
+    name: "EzTracker",
+    tag: "Produto novo · Em andamento",
+    cover: etCover,
+    coverAlt: "Capa do EzTracker: do clique à receita, com o funil de conversão e a confiança da atribuição",
+    kicker: "Rastreamento e atribuição de leads · EzPag · 2026",
+    cardDesc:
+      "Um motor de atribuição que liga cada clique de marketing ao lead, à venda e à receita.",
+    summary:
+      "Marketing investia em anúncios, influenciadores e parceiros, mas quando o cliente chegava ao WhatsApp a origem se perdia. Sem saber qual campanha trazia quem realmente compra, a discussão entre marketing e vendas virava disse me disse. O EzTracker é a camada que liga o clique ao lead, à venda e à receita.",
+    meta: [
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
+      { label: "Tipo", value: "Produto interno · Marketing, Comercial e Financeiro" },
+      { label: "IA no processo", value: "Claude: estruturação da visão do produto e protótipo funcional" },
+      { label: "Status", value: "Em andamento · 2026" },
+    ],
+    heroImage: etDashboard,
+    heroImageAlt: "Visão geral do EzTracker: indicadores, funil de conversão, campanhas por receita e confiança da atribuição",
+    sections: [
+      {
+        kicker: "O problema",
+        title: "A origem do cliente se perdia no WhatsApp",
+        paragraphs: [
+          "Um cliente pode chegar à EzPag por um anúncio no Facebook ou no Instagram, um story, o link de um influenciador, a indicação de um vendedor, o perfil institucional ou a página de um lançamento. Quase todos esses caminhos terminam no WhatsApp.",
+          "E o WhatsApp recebe só o telefone e a mensagem inicial. Sem uma camada no meio, não dava para ligar com segurança a conversa ao clique, à campanha, ao anúncio, ao criativo, ao parceiro e à venda final. Marketing não sabia onde investir, e cada área contava uma versão diferente de quem trouxe o cliente.",
+        ],
+      },
+      {
+        kicker: "A visão",
+        title: "Um GPS do cliente, não um encurtador de links",
+        paragraphs: [
+          "Defini o EzTracker como o motor central de rastreamento e atribuição entre Marketing, Comercial, CRM, WhatsApp e os sistemas de análise e pagamento. A pergunta que ele responde é uma só: qual campanha traz o cliente que paga.",
+        ],
+        bullets: [
+          "Onde tudo começou: o clique exato, o anúncio, o criativo, o influenciador ou o vendedor.",
+          "A jornada: quando entrou no WhatsApp, quando virou oportunidade no CRM, se fez a aplicação, se foi aprovado, recusado ou abandonou.",
+          "O dinheiro: se comprou, quanto de receita e de margem gerou.",
+        ],
+      },
+      {
+        kicker: "Como a IA entrou",
+        title: "Da visão ao protótipo navegável",
+        paragraphs: [
+          "Usei o Claude para estruturar a visão do produto e transformar a jornada em telas: campanhas, links rastreados, parceiros, leads e monitoramento. O protótipo foi construído com IA a partir das minhas decisões de produto, para que marketing, vendas e tecnologia discutissem a mesma coisa desde o início.",
+          "As decisões sobre o que medir, como tratar a incerteza da atribuição e o que cada área precisa ver foram minhas. A IA acelerou o caminho até algo clicável.",
+        ],
+      },
+      {
+        kicker: "Visão geral",
+        title: "O funil inteiro, do clique ao contrato",
+        image: etFunil,
+        imageAlt: "Funil de conversão do clique ao contrato assinado, ao lado das campanhas por receita",
+        caption: "O funil completo e as campanhas ordenadas por receita, não por cliques. Dados fictícios.",
+        layout: "imageFull",
+        paragraphs: [
+          "A tela inicial mostra todas as etapas em uma linha só: clique, redirecionamento, conversa, lead, qualificação, aplicação, aprovação e contrato. As campanhas aparecem ordenadas pela receita que geraram, não pelo volume de cliques, porque é isso que marketing precisa saber para decidir onde investir.",
+        ],
+      },
+      {
+        kicker: "Decisão de design",
+        title: "Mostrar o quanto a atribuição é confiável",
+        image: etAtribuicao,
+        imageAlt: "Blocos de tempo entre etapas, custo e retorno e confiança da atribuição",
+        caption: "Tempo entre etapas, custo e retorno, e a confiança de cada atribuição. Dados fictícios.",
+        layout: "imageFull",
+        paragraphs: [
+          "Nem toda atribuição tem a mesma certeza. Um clique com identificador confirmado é diferente de um lead ligado só pelo telefone. Em vez de esconder isso, a tela mostra a confiança em três níveis e quantos registros ficaram sem origem.",
+          "Foi a decisão que mais pesou para acabar com o disse me disse: quando os números assumem a própria incerteza, marketing e vendas passam a confiar no mesmo dado.",
+        ],
+      },
+      {
+        kicker: "Links rastreados",
+        title: "Cada link carrega a sua origem",
+        image: etLinks,
+        imageAlt: "Lista de links rastreados por campanha, canal, destino, cliques e conversas",
+        caption: "Cada link sabe de qual campanha e canal veio, e quantas conversas gerou. Dados fictícios.",
+        layout: "imageFull",
+      },
+      {
+        kicker: "Parceiros",
+        title: "Qualidade, não só volume",
+        image: etParceiros,
+        imageAlt: "Tela de parceiros e influenciadores com leads, aprovações, receita, comissão e qualidade",
+        caption: "Leads, aprovações, receita e comissão por parceiro, com um selo de qualidade. Dados fictícios.",
+        layout: "imageFull",
+        paragraphs: [
+          "Influenciadores, agências, dealers e vendedores aparecem com o que trouxeram de verdade: leads, aprovações, receita e comissão a repassar. O selo de qualidade considera fraude e inadimplência dos clientes originados, para que um parceiro com muito clique e pouca venda não pareça melhor do que é.",
+        ],
+      },
+      {
+        kicker: "Leads",
+        title: "Cada lead com a sua jornada",
+        image: etLeads,
+        imageAlt: "Lista de leads com status, campanha, anúncio, parceiro e nível de atribuição",
+        caption: "Status, campanha, anúncio, parceiro e confiança da atribuição em cada lead. Dados fictícios.",
+        layout: "imageFull",
+      },
+      {
+        kicker: "Monitoramento",
+        title: "Quando o rastreamento quebra, alguém fica sabendo",
+        image: etMonitor,
+        imageAlt: "Tela de monitoramento com saúde dos redirecionamentos, webhooks e alertas ativos",
+        caption: "Saúde dos redirecionamentos e integrações, e alertas com a ação ao lado. Dados fictícios.",
+        layout: "imageFull",
+        paragraphs: [
+          "Atribuição só vale se não tiver buracos. O monitoramento mostra a saúde dos redirecionamentos e das integrações com WhatsApp, CRM e sistemas internos, e cada alerta já vem com a ação: reprocessar, investigar ou abrir o parceiro.",
+          "Os registros sem vínculo ficam separados por tipo, como lead sem CRM, pedido sem identificador ou lead sem origem, para que o time corrija antes do fechamento do mês.",
+        ],
+      },
+      {
+        kicker: "Impacto esperado",
+        title: "O que muda na operação",
+        paragraphs: [
+          "O produto está em andamento. Os pontos abaixo são o que ele foi desenhado para resolver e o que vai ser acompanhado depois do lançamento.",
+        ],
+        bullets: [
+          "Fim do disse me disse: marketing e vendas olham para o mesmo número, com a confiança de cada atribuição à vista.",
+          "Investimento guiado por receita: campanhas comparadas pelo que vendem e pela margem que geram, não por cliques ou leads.",
+          "Custo real por etapa: custo por conversa, por lead, por aplicação e por cliente, campanha a campanha.",
+          "Comissão justa: parceiros e influenciadores remunerados pelo que trouxeram de verdade, com qualidade medida por fraude e inadimplência.",
+          "Menos fraude na origem: tráfego inválido e parceiros com padrão suspeito aparecem antes de virar prejuízo.",
+          "Gargalos visíveis: o tempo entre cada etapa mostra onde o lead esfria, do clique ao contrato.",
+          "Dados confiáveis no fechamento do mês: registros sem vínculo são apontados e corrigidos antes de distorcer os relatórios.",
+        ],
+      },
+      {
+        kicker: "Desafios",
+        title: "O que está sendo difícil",
+        bullets: [
+          "Ligar um clique anônimo a um telefone no WhatsApp sem prometer uma certeza que o dado não tem.",
+          "Cobrir jornadas longas: o cliente pode clicar hoje e comprar semanas depois.",
+          "Desenhar para três áreas com perguntas diferentes, marketing, comercial e financeiro, sem criar três produtos.",
+          "Dar ao produto uma linguagem que todo mundo entendesse. A metáfora do GPS do cliente ajudou a alinhar a visão antes da primeira tela.",
+        ],
+      },
+    ],
+    appCta: {
+      image: etCta,
+      url: "/prototipos/eztracker/",
+      alt: "Teste o protótipo do EzTracker: campanhas, links, parceiros e a atribuição de cada lead",
+      accent: "#34D399",
+      accentText: "#0D1B2A",
+      label: "Abrir protótipo · requer senha",
+    },
+    galleryTitle: "O protótipo, tela a tela",
+    gallery: [
+      { id: 1, title: "Visão geral", description: "Indicadores, funil e campanhas por receita", imageSrc: etDashboard },
+      { id: 2, title: "Campanhas", description: "Canal, status, período, orçamento e leads", imageSrc: etCampanhas },
+      { id: 3, title: "Links rastreados", description: "Origem, cliques e conversas de cada link", imageSrc: etLinks },
+      { id: 4, title: "Parceiros", description: "Receita, comissão e qualidade por parceiro", imageSrc: etParceiros },
+      { id: 5, title: "Leads", description: "A jornada e a atribuição de cada lead", imageSrc: etLeads },
+      { id: 6, title: "Monitoramento", description: "Saúde do rastreamento e alertas", imageSrc: etMonitor },
+      { id: 7, title: "Registros sem vínculo", description: "O que corrigir antes do fechamento", imageSrc: etSemvinculo },
     ],
   },
 ];
