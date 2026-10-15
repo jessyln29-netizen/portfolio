@@ -62,7 +62,7 @@ export default function Hero() {
           <h1 className="hx-title">
             Olá, eu sou a Jess!
             <br />
-            <em>Designer de produto Sênior &amp;&nbsp;Design&nbsp;Engineer</em>
+            <em>Senior Product Designer &amp;&nbsp;Design&nbsp;Engineer</em>
           </h1>
         </motion.div>
 
