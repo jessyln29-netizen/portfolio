@@ -505,6 +505,23 @@ export const aiProjects: Project[] = [
         ],
       },
       {
+        kicker: "Impacto esperado",
+        title: "O que muda na operação",
+        paragraphs: [
+          "O pipeline ainda depende das decisões levadas à liderança, então os números abaixo são a linha de base medida na amostra. É contra eles que o impacto vai ser acompanhado.",
+        ],
+        bullets: [
+          "Cobertura: de 98 ligações lidas à mão, menos de 1% das mais de 18 mil registradas, para 100% das ligações analisadas automaticamente.",
+          "Tempo de análise: ler uma ligação inteira para entender o que aconteceu dá lugar a resumo, desfecho e próximos passos prontos em segundos.",
+          "Conversão: 34% das ligações de venda e suporte travam em documentação. Com o atrito medido em escala, produto ataca a causa e o vendedor para de perder fechamentos que não dependem dele.",
+          "Validação de cartão: a etapa de micro-cobrança concentrou repetições e links expirando. Vira um indicador acompanhado, não um problema invisível.",
+          "Cobrança: 53% das ligações da amostra eram de cobrança, área que até então não gerava nenhuma informação estruturada. Passa a ter funil de bloqueio, desbloqueio e conciliação.",
+          "Coaching: cada vendedor recebe devolutiva sobre a etapa exata a corrigir, e as melhores ligações do próprio time viram material de treinamento.",
+          "Risco e conformidade: promessas, explicação da quitação e exposição de dados passam a ser conferidas em toda ligação, reduzindo exposição a disputas e chargebacks.",
+          "Visão de ponta a ponta: venda, contrato e cobrança ligados pelo número do contrato respondem se o que foi prometido na venda explica o que acontece depois.",
+        ],
+      },
+      {
         kicker: "Entrega",
         title: "Do diagnóstico à aprovação com a liderança",
         image: ezSlide14,
@@ -758,6 +775,24 @@ export const aiProjects: Project[] = [
         paragraphs: [
           "A conclusão virou um fluxo guiado em três passos: escolher a decisão, justificar com motivos agrupados por categoria e detalhar. O botão principal muda de texto conforme a decisão e só fica ativo quando a justificativa está completa.",
           "Quando a ordem fica pendente, o sistema cria um card que vai para o time de vendas. O analista revisa a resolução e aceita ou reabre, e a ordem só pode ser aprovada com todas as pendências concluídas.",
+        ],
+      },
+      {
+        kicker: "Impacto esperado",
+        title: "O que muda na operação",
+        paragraphs: [
+          "O módulo segue para desenvolvimento, então os pontos abaixo partem das dores medidas no workshop. São elas que viram os indicadores de acompanhamento depois do lançamento.",
+        ],
+        bullets: [
+          "Tempo por análise: tudo o que o analista consultava em várias telas e ferramentas fica em um fluxo de 5 etapas, com o essencial no topo.",
+          "Menos troca de ferramenta: validação de endereço, extratos e alertas dentro da análise, sem sair para sistemas externos a cada ordem.",
+          "Menos retrabalho: a dor mais votada era reenviar extratos 2 a 3 vezes e esperar a fila processar. O reprocessamento acontece dentro da ordem.",
+          "Fila com dono e prazo: tempo de espera e responsável visíveis em cada ordem, sem duas pessoas abrindo a mesma análise e sem urgência escondida.",
+          "Decisões consistentes: toda aprovação, recusa ou pendência sai com motivo padronizado, o que reduz a variação entre analistas e alimenta o motor de decisão.",
+          "Pendências rastreáveis: vendas e antifraude trabalham no mesmo card, e nenhuma ordem é aprovada com pendência aberta.",
+          "Histórico preservado: versões anteriores dos documentos ficam guardadas, o que sustenta contestações de chargeback com evidência.",
+          "Onboarding mais rápido: um fluxo guiado e alertas que explicam o próprio porquê encurtam o tempo até um analista novo decidir sozinho.",
+          "Base para automação: com decisões estruturadas, padrões claros de risco podem ser tratados pelo sistema e o parecer pode ser assistido por IA.",
         ],
       },
       {
