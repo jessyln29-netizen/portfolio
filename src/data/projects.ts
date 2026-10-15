@@ -120,7 +120,7 @@ export const projects: Project[] = [
     summary:
       "Um SaaS que transforma contratar mudança, algo caro, opaco e estressante, num fluxo visual: monte a carga arrastando móveis num canvas, veja o volume em tempo real e receba cotações comparáveis de transportadoras.",
     meta: [
-      { label: "Meu papel", value: "Product Design end-to-end (UX/UI + Design System)" },
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
       { label: "Tipo", value: "Web app · SaaS B2C" },
       { label: "Stack", value: "Next.js · Tailwind · shadcn/ui · Prisma · Stripe" },
       { label: "Ano", value: "2026" },
@@ -228,7 +228,7 @@ export const projects: Project[] = [
     summary:
       "Uma plataforma de transferências internacionais que aproxima brasileiros nos EUA de suas famílias no Brasil, transformando o envio de dinheiro num processo simples, seguro e sem burocracia.",
     meta: [
-      { label: "Meu papel", value: "Product Design, identidade de marca, UX/UI e Design System" },
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
       { label: "Tipo", value: "App mobile + landing · Money transfer" },
       { label: "Empresa", value: "Envia+, do grupo EzPag" },
       { label: "Ano", value: "2026" },
@@ -294,7 +294,7 @@ export const projects: Project[] = [
     summary:
       "Um app que transforma caminhadas e corridas em jogo: geolocalização e gamificação viram moedas, missões, níveis e recompensas de verdade. A cidade é a sua arena.",
     meta: [
-      { label: "Meu papel", value: "Product Design end-to-end (UX/UI + Design System)" },
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
       { label: "Tipo", value: "App mobile · fitness + gamificação" },
       { label: "Idioma", value: "PT-BR (multilíngue no roadmap)" },
       { label: "Estágio", value: "MVP · piloto em Brickell & Downtown Miami" },
@@ -379,7 +379,7 @@ export const aiProjects: Project[] = [
     summary:
       "O Ezcall gravava e transcrevia todas as ligações de vendas e cobrança, mas ninguém lia esse material. Usei IA para analisar 98 transcrições, encontrar onde o cliente realmente trava e transformar esse diagnóstico em produto: um pipeline de análise e as telas de desempenho, produto e operação.",
     meta: [
-      { label: "Meu papel", value: "PO & Product Designer: discovery, análise, especificação e protótipo" },
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
       { label: "Tipo", value: "Produto interno · Inteligência de atendimento" },
       { label: "IA no processo", value: "Claude: leitura das transcrições, protótipo funcional e apresentação" },
       { label: "Ano", value: "2026" },
@@ -558,7 +558,7 @@ export const aiProjects: Project[] = [
     summary:
       "Cada ordem da EzPag passa por uma análise de antifraude antes da aprovação, e a informação estava espalhada por várias telas. Conduzi o discovery com o time de análise, usei IA para sintetizar os workshops e transformei o resultado em um fluxo guiado: 5 etapas, um informe de risco sempre visível e uma decisão que só sai justificada.",
     meta: [
-      { label: "Meu papel", value: "PO & Product Designer: discovery, facilitação, UX/UI e protótipo" },
+      { label: "Meu papel", value: "Product Design · UX/UI · Prototyping · AI-Assisted Development" },
       { label: "Tipo", value: "Produto interno · Back-office de análise de risco" },
       { label: "IA no processo", value: "Claude: síntese dos workshops, documento de ação e protótipo funcional" },
       { label: "Ano", value: "2026" },
